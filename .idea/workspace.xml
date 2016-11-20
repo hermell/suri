@@ -2,69 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdeb7d5a-bbc7-4a5a-90ff-142b08339e88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-chartist.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-chartist.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-flot.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-flot.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-morris.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-morris.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-nvd3.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-nvd3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-other.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-other.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-peity.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-peity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/chart-sparkline.html" afterPath="$PROJECT_DIR$/templates/main/sample/chart-sparkline.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/components-grid.html" afterPath="$PROJECT_DIR$/templates/main/sample/components-grid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/components-nestable-list.html" afterPath="$PROJECT_DIR$/templates/main/sample/components-nestable-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/components-range-sliders.html" afterPath="$PROJECT_DIR$/templates/main/sample/components-range-sliders.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/components-sweet-alert.html" afterPath="$PROJECT_DIR$/templates/main/sample/components-sweet-alert.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/components-widgets.html" afterPath="$PROJECT_DIR$/templates/main/sample/components-widgets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-calendar.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-calendar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-coming-soon.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-coming-soon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-email-template.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-email-template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-gallery.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-gallery.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-invoice.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-invoice.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-maintenance.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-maintenance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/extras-timeline.html" afterPath="$PROJECT_DIR$/templates/main/sample/extras-timeline.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-advanced.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-advanced.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-elements.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-elements.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-summernote.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-summernote.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-uploads.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-uploads.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-validation.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-validation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-wizard.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-wizard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-wysiwig.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-wysiwig.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/form-xeditable.html" afterPath="$PROJECT_DIR$/templates/main/sample/form-xeditable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/icons-fontawesome.html" afterPath="$PROJECT_DIR$/templates/main/sample/icons-fontawesome.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/icons-glyphicons.html" afterPath="$PROJECT_DIR$/templates/main/sample/icons-glyphicons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/icons-ionicons.html" afterPath="$PROJECT_DIR$/templates/main/sample/icons-ionicons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/icons-materialdesign.html" afterPath="$PROJECT_DIR$/templates/main/sample/icons-materialdesign.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/icons-themifyicon.html" afterPath="$PROJECT_DIR$/templates/main/sample/icons-themifyicon.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/index.html" afterPath="$PROJECT_DIR$/templates/main/sample/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/index2.html" afterPath="$PROJECT_DIR$/templates/main/sample/index2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/mail-compose.html" afterPath="$PROJECT_DIR$/templates/main/sample/mail-compose.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/mail-inbox.html" afterPath="$PROJECT_DIR$/templates/main/sample/mail-inbox.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/mail-read.html" afterPath="$PROJECT_DIR$/templates/main/sample/mail-read.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/map-google.html" afterPath="$PROJECT_DIR$/templates/main/sample/map-google.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/map-vector.html" afterPath="$PROJECT_DIR$/templates/main/sample/map-vector.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-404.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-500.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-500.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-blank.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-blank.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-lock-screen.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-lock-screen.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-login.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-recoverpw.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-recoverpw.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/pages-register.html" afterPath="$PROJECT_DIR$/templates/main/sample/pages-register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/tables-basic.html" afterPath="$PROJECT_DIR$/templates/main/sample/tables-basic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/tables-datatable.html" afterPath="$PROJECT_DIR$/templates/main/sample/tables-datatable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/tables-editable.html" afterPath="$PROJECT_DIR$/templates/main/sample/tables-editable.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/tables-responsive.html" afterPath="$PROJECT_DIR$/templates/main/sample/tables-responsive.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-bootstrap.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-bootstrap.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-buttons.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-buttons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-modals.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-modals.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-notification.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-notification.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-panels.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-panels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-portlets.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-portlets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-progressbars.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-progressbars.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-tabs.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-tabs.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/sample/ui-typography.html" afterPath="$PROJECT_DIR$/templates/main/sample/ui-typography.html" />
     </list>
     <ignored path="suriProject.iws" />
@@ -117,61 +58,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-buttons.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-buttons.html">
+      <file leaf-file-name="pages-404.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-63.785713">
+              <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-checkbox-radio.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html">
+      <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-modals.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-modals.html">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/vEnvSuri/Lib/site-packages/django/core/management/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="316" column="33" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-notification.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-notification.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suri/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-panels.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-panels.html">
+      <file leaf-file-name="form-advanced.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/main/sample/form-advanced.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.608769">
+              <caret line="833" column="89" selection-start-line="833" selection-start-column="89" selection-end-line="833" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-portlets.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ui-portlets.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-portlets.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.032040473">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state vertical-scroll-proportion="-14.928572">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -220,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/suriProject/__init__.py" />
         <option value="$PROJECT_DIR$/suriProject/wsgi.py" />
         <option value="$PROJECT_DIR$/suri/apps.py" />
         <option value="$PROJECT_DIR$/suri/admin.py" />
@@ -266,11 +206,12 @@
         <option value="$PROJECT_DIR$/templates/main/sample/pages-lock-screen.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/pages-blank.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/pages-500.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/pages-404.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/map-vector.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/map-google.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/ui-typography.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html" />
+        <option value="$PROJECT_DIR$/templates/main/sample/pages-404.html" />
+        <option value="$PROJECT_DIR$/templates/main/sample/form-advanced.html" />
       </list>
     </option>
   </component>
@@ -771,7 +712,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27452025" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -780,7 +721,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32572615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32572615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -823,30 +764,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/components-range-sliders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/components-sweet-alert.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/components-widgets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/sample/extras-calendar.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6785714">
@@ -896,14 +813,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/sample/extras-timeline.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/form-advanced.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1056,14 +965,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/sample/map-vector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1225,8 +1126,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-portlets.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032040473">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        <state vertical-scroll-proportion="-14.928572">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/vEnvSuri/Lib/site-packages/django/core/management/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="316" column="33" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-63.785713">
+          <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suri/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/sample/form-advanced.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.608769">
+          <caret line="833" column="89" selection-start-line="833" selection-start-column="89" selection-end-line="833" selection-end-column="89" />
           <folding />
         </state>
       </provider>
