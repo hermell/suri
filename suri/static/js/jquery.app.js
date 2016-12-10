@@ -1,255 +1,306 @@
-/* Theme Name: Lugada - Landing page Template
-   Author: Coderthemes
-   Author e-mail: coderthemes@gmail.com
-   Version: 1.0.0
-   Created:Jun 2015
-   File Description:Main JS file of the template
+/**
+* Theme: Minton Admin Template
+* Author: Coderthemes
+* Module/App: Main Js
 */
 
-/* ==============================================
-Smooth Scroll To Anchor
-=============================================== */
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('.navbar-nav a').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 0
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-/* ==============================================
-Preloader
-=============================================== */
 
-$(window).load(function() {
-    $('.status').fadeOut();
-    $('.preloader').delay(350).fadeOut('slow');
-});
+!function($) {
+    "use strict";
 
-/* ==============================================
-WOW plugin triggers animate.css on scroll
-=============================================== */
-jQuery(document).ready(function () {
-    wow = new WOW(
-        {
-            animateClass: 'animated',
-            offset: 100,
-            mobile: true
+    var Sidemenu = function() {
+        this.$body = $("body"),
+        this.$openLeftBtn = $(".open-left"),
+        this.$menuItem = $("#sidebar-menu a")
+    };
+    Sidemenu.prototype.openLeftBar = function() {
+      $("#wrapper").toggleClass("enlarged");
+      $("#wrapper").addClass("forced");
+
+      if($("#wrapper").hasClass("enlarged") && $("body").hasClass("fixed-left")) {
+        $("body").removeClass("fixed-left").addClass("fixed-left-void");
+      } else if(!$("#wrapper").hasClass("enlarged") && $("body").hasClass("fixed-left-void")) {
+        $("body").removeClass("fixed-left-void").addClass("fixed-left");
+      }
+      
+      if($("#wrapper").hasClass("enlarged")) {
+        $(".left ul").removeAttr("style");
+      } else {
+        $(".subdrop").siblings("ul:first").show();
+      }
+      
+      toggle_slimscroll(".slimscrollleft");
+      $("body").trigger("resize");
+    },
+    //menu item click
+    Sidemenu.prototype.menuItemClick = function(e) {
+       if(!$("#wrapper").hasClass("enlarged")){
+        if($(this).parent().hasClass("has_sub")) {
+
+        }   
+        if(!$(this).hasClass("subdrop")) {
+          // hide any open menus and remove all other classes
+          $("ul",$(this).parents("ul:first")).slideUp(350);
+          $("a",$(this).parents("ul:first")).removeClass("subdrop");
+          $("#sidebar-menu .pull-right i").removeClass("md-remove").addClass("md-add");
+          
+          // open our new menu and add the open class
+          $(this).next("ul").slideDown(350);
+          $(this).addClass("subdrop");
+          $(".pull-right i",$(this).parents(".has_sub:last")).removeClass("md-add").addClass("md-remove");
+          $(".pull-right i",$(this).siblings("ul")).removeClass("md-remove").addClass("md-add");
+        }else if($(this).hasClass("subdrop")) {
+          $(this).removeClass("subdrop");
+          $(this).next("ul").slideUp(350);
+          $(".pull-right i",$(this).parent()).removeClass("md-remove").addClass("md-add");
         }
-    );
-    wow.init();
-});
+      } 
+    },
 
-$(window).stellar({
-    horizontalScrolling: false,
-    responsive: true,
-     scrollProperty: 'scroll',
-     parallaxElements: false,
-     horizontalScrolling: false,
-     horizontalOffset: 0,
-     verticalOffset: 0
-});
+    //init sidemenu
+    Sidemenu.prototype.init = function() {
+      var $this  = this;
 
-/* ==============================================
-Magnific Popup
-=============================================== */
-$(document).ready(function() {
-    $('.popup-video').magnificPopup({
-      disableOn: 700,
-      type: 'iframe',
-      mainClass: 'mfp-fade',
-      removalDelay: 160,
-      preloader: false,
+      var ua = navigator.userAgent,
+        event = (ua.match(/iP/i)) ? "touchstart" : "click";
+      
+      //bind on click
+      this.$openLeftBtn.on(event, function(e) {
+        e.stopPropagation();
+        $this.openLeftBar();
+      });
 
-      fixedContentPos: false
-    });
-});
+      // LEFT SIDE MAIN NAVIGATION
+      $this.$menuItem.on(event, $this.menuItemClick);
 
-$(document).ready(function() {
-    $('.image-popup').magnificPopup({
-        type: 'image',
-        closeOnContentClick: true,
-        mainClass: 'mfp-fade',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-        }
-    });
-});
-//sticky header on scroll
-$(window).load(function() {
-    $(".sticky").sticky({topSpacing: 0});
-});
+      // NAVIGATION HIGHLIGHT & OPEN PARENT
+      $("#sidebar-menu ul li.has_sub a.active").parents("li:last").children("a:first").addClass("active").trigger("click");
+    },
+
+    //init Sidemenu
+    $.Sidemenu = new Sidemenu, $.Sidemenu.Constructor = Sidemenu
+    
+}(window.jQuery),
 
 
-/* ==============================================
-Contact App
-=============================================== */
+function($) {
+    "use strict";
 
-//var $ = jQuery.noConflict(); //Relinquish jQuery's control of the $ variable. 
-
-/* Global constants */
-
-/*global jQuery */
-jQuery(function ($) {
-    'use strict';
-
-    /**
-     * Contact Form Application
-     */
-    var ContactFormApp = {
-        $contactForm: $("#ajax-form"),
-        $contactFormBtn: $("#send"),
-        $contactFormName: $("#name2"),
-        $contactFormEmail: $("#email2"),
-        $contactFormMessage: $("#message2"),
-        $confirmMessage: $("#ajaxsuccess"),
-        $errorMessages: $(".error"),
-        $errorName: $("#err-name"),
-        $errorEmail: $("#err-emailvld"),
-        $errorMessage: $("#err-message"),
-        $errorForm: $("#err-form"),
-        $errorTimeout: $("#err-timedout"),
-        $errorState: $("#err-state"),
-
-        //Validate Contact Us Data
-        validate: function () {
-            var error = false; // we will set this true if the form isn't valid
-
-            var name = this.$contactFormName.val(); // get the value of the input field
-            if(name == "" || name == " " || name == "Name") {
-                this.$errorName.show(500);
-                this.$errorName.delay(4000);
-                this.$errorName.animate({
-                    height: 'toggle'  
-                }, 500, function() {
-                    // Animation complete.
-                }); 
-                error = true; // change the error state to true
-            }
-
-            var email_compare = /^([a-z0-9_.-]+)@([da-z.-]+).([a-z.]{2,6})$/; // Syntax to compare against input
-            var email = this.$contactFormEmail.val().toLowerCase(); // get the value of the input field
-
-            if (email == "" || email == " " || email == "E-mail") { // check if the field is empty
-                this.$contactFormEmail.fadeIn('slow'); // error - empty
-                error = true;
-            }
-            else if (!email_compare.test(email)) { // if it's not empty check the format against our email_compare variable
-                this.$errorEmail.show(500);
-                this.$errorEmail.delay(4000);
-                this.$errorEmail.animate({
-                    height: 'toggle'  
-                }, 500, function() {
-                    // Animation complete.
-                });         
-                error = true;
-            }
-
-            var message = this.$contactFormMessage.val(); // get the value of the input field
-            
-            if(message == "" || message == " " || message == "Message") {              
-                this.$errorMessage.show(500);
-                this.$errorMessage.delay(4000);
-                this.$errorMessage.animate({
-                    height: 'toggle'  
-                }, 500, function() {
-                    // Animation complete.
-                });            
-                error = true; // change the error state to true
-            }
-
-            if(error == true) {
-                this.$errorForm.show(500);
-                this.$errorForm.delay(4000);
-                this.$errorForm.animate({
-                    height: 'toggle'  
-                }, 500, function() {
-                    // Animation complete.
-                }); 
-            }
-
-            return error;
-        },
-        //contact form submit handler
-        contactFormSubmit: function (obj) {
-            this.$errorMessages.fadeOut('slow'); // reset the error messages (hides them)
-
-            if(this.validate() == false) {
-
-                var data_string = $('#ajax-form').serialize(); // Collect data from form
-
-                var $this = this;
-                $.ajax({
-                    type: "POST",
-                    url: $this.$contactForm.attr('action'),
-                    data: data_string,
-                    timeout: 6000,
-                    error: function(request,error) {
-                        if (error == "timeout") {
-                            $this.$errorTimeout.slideDown('slow');
-                        }
-                        else {
-                            $this.$errorState.slideDown('slow');
-                            $this.$errorState.html('An error occurred: ' + error + '');
-                        }
-                    },
-                    success: function() {
-                        $this.$confirmMessage.show(500);
-                        $this.$confirmMessage.delay(4000);
-                        $this.$confirmMessage.animate({
-                            height: 'toggle'  
-                            }, 500, function() {
-                        });    
-                        
-                        $this.$contactFormName.val('');
-                        $this.$contactFormEmail.val('');
-                        $this.$contactFormMessage.val('');
-                    }
-                });
-            }
-            return false;
-        },
-        bindEvents: function () {
-            //binding submit event
-            this.$contactFormBtn.on('click', this.contactFormSubmit.bind(this));
-        },
-        init: function () {
-            //initializing the contact form
-            console.log('Contact form is initialized');
-            this.bindEvents();
-            return this;
-        }
+    var FullScreen = function() {
+        this.$body = $("body"),
+        this.$fullscreenBtn = $("#btn-fullscreen")
     };
 
-    /**
-        Main application module
-    */
-    var App = {
-        $options: {},
-        
-
-        bindEvents: function () {
-            //binding events
-            $(document).on('ready', this.docReady.bind(this));
-        },
-        
-        //document ready event
-        docReady: function () {
-            //contat form
-            ContactFormApp.init();
-
-        },
-        init: function (_options) {
-            $.extend(this.$options, _options);
-            this.bindEvents();
+    //turn on full screen
+    // Thanks to http://davidwalsh.name/fullscreen
+    FullScreen.prototype.launchFullscreen  = function(element) {
+      if(element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if(element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if(element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if(element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    },
+    FullScreen.prototype.exitFullscreen = function() {
+      if(document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if(document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if(document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
+    },
+    //toggle screen
+    FullScreen.prototype.toggle_fullscreen  = function() {
+      var $this = this;
+      var fullscreenEnabled = document.fullscreenEnabled || document.mozFullScreenEnabled || document.webkitFullscreenEnabled;
+      if(fullscreenEnabled) {
+        if(!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullscreenElement) {
+          $this.launchFullscreen(document.documentElement);
+        } else{
+          $this.exitFullscreen();
         }
+      }
+    },
+    //init sidemenu
+    FullScreen.prototype.init = function() {
+      var $this  = this;
+      //bind
+      $this.$fullscreenBtn.on('click', function() {
+        $this.toggle_fullscreen();
+      });
+    },
+     //init FullScreen
+    $.FullScreen = new FullScreen, $.FullScreen.Constructor = FullScreen
+    
+}(window.jQuery),
+
+
+
+//main app module
+ function($) {
+    "use strict";
+    
+    var App = function() {
+        this.VERSION = "1.0.0",
+        this.AUTHOR = "Coderthemes", 
+        this.SUPPORT = "coderthemes@gmail.com", 
+        this.pageScrollElement = "html, body", 
+        this.$body = $("body")
     };
+    
+     //on doc load
+    App.prototype.onDocReady = function(e) {
+      FastClick.attach(document.body);
+      resizefunc.push("initscrolls");
+      resizefunc.push("changeptype");
 
-    //Initializing the app
-    App.init({});
+      $('.animate-number').each(function(){
+        $(this).animateNumbers($(this).attr("data-value"), true, parseInt($(this).attr("data-duration"))); 
+      });
+    
+      //RUN RESIZE ITEMS
+      $(window).resize(debounce(resizeitems,100));
+      $("body").trigger("resize");
 
-});
+      // right side-bar toggle
+      $('.right-bar-toggle').on('click', function(e){
+
+          $('#wrapper').toggleClass('right-bar-enabled');
+      }); 
+
+      
+    },
+    //initilizing 
+    App.prototype.init = function() {
+        var $this = this;
+        //document load initialization
+        $(document).ready($this.onDocReady);
+        //init side bar - left
+        $.Sidemenu.init();
+        //init fullscreen
+        $.FullScreen.init();
+    },
+
+    $.App = new App, $.App.Constructor = App
+
+}(window.jQuery),
+
+//initializing main application module
+function($) {
+    "use strict";
+    $.App.init();
+}(window.jQuery);
+
+
+
+/* ------------ some utility functions ----------------------- */
+//this full screen
+var toggle_fullscreen = function () {
+
+}
+
+function executeFunctionByName(functionName, context /*, args */) {
+  var args = [].slice.call(arguments).splice(2);
+  var namespaces = functionName.split(".");
+  var func = namespaces.pop();
+  for(var i = 0; i < namespaces.length; i++) {
+    context = context[namespaces[i]];
+  }
+  return context[func].apply(this, args);
+}
+var w,h,dw,dh;
+var changeptype = function(){
+    w = $(window).width();
+    h = $(window).height();
+    dw = $(document).width();
+    dh = $(document).height();
+
+    if(jQuery.browser.mobile === true){
+        $("body").addClass("mobile").removeClass("fixed-left");
+    }
+
+    if(!$("#wrapper").hasClass("forced")){
+      if(w > 990){
+        $("body").removeClass("smallscreen").addClass("widescreen");
+          $("#wrapper").removeClass("enlarged");
+      }else{
+        $("body").removeClass("widescreen").addClass("smallscreen");
+        $("#wrapper").addClass("enlarged");
+        $(".left ul").removeAttr("style");
+      }
+      if($("#wrapper").hasClass("enlarged") && $("body").hasClass("fixed-left")){
+        $("body").removeClass("fixed-left").addClass("fixed-left-void");
+      }else if(!$("#wrapper").hasClass("enlarged") && $("body").hasClass("fixed-left-void")){
+        $("body").removeClass("fixed-left-void").addClass("fixed-left");
+      }
+
+  }
+  toggle_slimscroll(".slimscrollleft");
+}
+
+
+var debounce = function(func, wait, immediate) {
+  var timeout, result;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) result = func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) result = func.apply(context, args);
+    return result;
+  };
+}
+
+function resizeitems(){
+  if($.isArray(resizefunc)){  
+    for (i = 0; i < resizefunc.length; i++) {
+        window[resizefunc[i]]();
+    }
+  }
+}
+
+function initscrolls(){
+    if(jQuery.browser.mobile !== true){
+      //SLIM SCROLL
+      $('.slimscroller').slimscroll({
+        height: 'auto',
+        size: "5px"
+      });
+
+      $('.slimscrollleft').slimScroll({
+          height: 'auto',
+          position: 'right',
+          size: "5px",
+          color: '#dcdcdc',
+          wheelStep: 5
+      });
+  }
+}
+function toggle_slimscroll(item){
+    if($("#wrapper").hasClass("enlarged")){
+      $(item).css("overflow","inherit").parent().css("overflow","inherit");
+      $(item). siblings(".slimScrollBar").css("visibility","hidden");
+    }else{
+      $(item).css("overflow","hidden").parent().css("overflow","hidden");
+      $(item). siblings(".slimScrollBar").css("visibility","visible");
+    }
+}
+
+var wow = new WOW(
+  {
+    boxClass: 'wow', // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset: 50, // distance to the element when triggering the animation (default is 0)
+    mobile: false        // trigger animations on mobile devices (true is default)
+  }
+);
+wow.init();
+
