@@ -2,30 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdeb7d5a-bbc7-4a5a-90ff-142b08339e88" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/css/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/css/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/fonts/ws-ui-light.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/fonts/ws-ui-light.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/fonts/ws-ui-semibold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/fonts/ws-ui-semibold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/fonts/ws-ui.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/fonts/ws-ui.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/mac.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/main_test.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/preloader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/tab2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/images/testi-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/js/jquery-1.9.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/js/jquery.easing.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/js/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/suri/static/lib/mariadb-java-client-1.3.5.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.app.index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/email-templates/action.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/email-templates/alert.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/email-templates/billing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/error/pages-404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/error/pages-500.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/sample/components-grid.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/main/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/main/sample/components-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/main/sample/form-advanced.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/main/sample/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/main/sample/index2.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suri/static/js/jquery.app.js" afterPath="$PROJECT_DIR$/suri/static/js/jquery.app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/index.html" afterPath="$PROJECT_DIR$/templates/main/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/main/main.html" afterPath="$PROJECT_DIR$/templates/main/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suri/urls.py" afterPath="$PROJECT_DIR$/suri/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suri/views.py" afterPath="$PROJECT_DIR$/suri/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suriProject/urls.py" afterPath="$PROJECT_DIR$/suriProject/urls.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/main.html" afterPath="$PROJECT_DIR$/templates/main.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-chartist.html" afterPath="$PROJECT_DIR$/templates/sample/chart-chartist.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-flot.html" afterPath="$PROJECT_DIR$/templates/sample/chart-flot.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-morris.html" afterPath="$PROJECT_DIR$/templates/sample/chart-morris.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-nvd3.html" afterPath="$PROJECT_DIR$/templates/sample/chart-nvd3.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-other.html" afterPath="$PROJECT_DIR$/templates/sample/chart-other.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-peity.html" afterPath="$PROJECT_DIR$/templates/sample/chart-peity.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/chart-sparkline.html" afterPath="$PROJECT_DIR$/templates/sample/chart-sparkline.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/components-nestable-list.html" afterPath="$PROJECT_DIR$/templates/sample/components-nestable-list.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/components-range-sliders.html" afterPath="$PROJECT_DIR$/templates/sample/components-range-sliders.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/components-sweet-alert.html" afterPath="$PROJECT_DIR$/templates/sample/components-sweet-alert.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/components-widgets.html" afterPath="$PROJECT_DIR$/templates/sample/components-widgets.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-calendar.html" afterPath="$PROJECT_DIR$/templates/sample/extras-calendar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-coming-soon.html" afterPath="$PROJECT_DIR$/templates/sample/extras-coming-soon.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-email-template.html" afterPath="$PROJECT_DIR$/templates/sample/extras-email-template.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-gallery.html" afterPath="$PROJECT_DIR$/templates/sample/extras-gallery.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-invoice.html" afterPath="$PROJECT_DIR$/templates/sample/extras-invoice.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-maintenance.html" afterPath="$PROJECT_DIR$/templates/sample/extras-maintenance.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/extras-timeline.html" afterPath="$PROJECT_DIR$/templates/sample/extras-timeline.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-advanced.html" afterPath="$PROJECT_DIR$/templates/sample/form-advanced.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-elements.html" afterPath="$PROJECT_DIR$/templates/sample/form-elements.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-summernote.html" afterPath="$PROJECT_DIR$/templates/sample/form-summernote.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-uploads.html" afterPath="$PROJECT_DIR$/templates/sample/form-uploads.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-validation.html" afterPath="$PROJECT_DIR$/templates/sample/form-validation.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-wizard.html" afterPath="$PROJECT_DIR$/templates/sample/form-wizard.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-wysiwig.html" afterPath="$PROJECT_DIR$/templates/sample/form-wysiwig.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/form-xeditable.html" afterPath="$PROJECT_DIR$/templates/sample/form-xeditable.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/icons-fontawesome.html" afterPath="$PROJECT_DIR$/templates/sample/icons-fontawesome.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/icons-glyphicons.html" afterPath="$PROJECT_DIR$/templates/sample/icons-glyphicons.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/icons-ionicons.html" afterPath="$PROJECT_DIR$/templates/sample/icons-ionicons.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/icons-materialdesign.html" afterPath="$PROJECT_DIR$/templates/sample/icons-materialdesign.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/icons-themifyicon.html" afterPath="$PROJECT_DIR$/templates/sample/icons-themifyicon.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/mail-compose.html" afterPath="$PROJECT_DIR$/templates/sample/mail-compose.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/mail-inbox.html" afterPath="$PROJECT_DIR$/templates/sample/mail-inbox.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/mail-read.html" afterPath="$PROJECT_DIR$/templates/sample/mail-read.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/map-google.html" afterPath="$PROJECT_DIR$/templates/sample/map-google.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/map-vector.html" afterPath="$PROJECT_DIR$/templates/sample/map-vector.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-404.html" afterPath="$PROJECT_DIR$/templates/sample/pages-404.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-500.html" afterPath="$PROJECT_DIR$/templates/sample/pages-500.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-blank.html" afterPath="$PROJECT_DIR$/templates/sample/pages-blank.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-lock-screen.html" afterPath="$PROJECT_DIR$/templates/sample/pages-lock-screen.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-login.html" afterPath="$PROJECT_DIR$/templates/sample/pages-login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-recoverpw.html" afterPath="$PROJECT_DIR$/templates/sample/pages-recoverpw.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/pages-register.html" afterPath="$PROJECT_DIR$/templates/sample/pages-register.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/tables-basic.html" afterPath="$PROJECT_DIR$/templates/sample/tables-basic.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/tables-datatable.html" afterPath="$PROJECT_DIR$/templates/sample/tables-datatable.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/tables-editable.html" afterPath="$PROJECT_DIR$/templates/sample/tables-editable.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/tables-responsive.html" afterPath="$PROJECT_DIR$/templates/sample/tables-responsive.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-bootstrap.html" afterPath="$PROJECT_DIR$/templates/sample/ui-bootstrap.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-buttons.html" afterPath="$PROJECT_DIR$/templates/sample/ui-buttons.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html" afterPath="$PROJECT_DIR$/templates/sample/ui-checkbox-radio.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-modals.html" afterPath="$PROJECT_DIR$/templates/sample/ui-modals.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-notification.html" afterPath="$PROJECT_DIR$/templates/sample/ui-notification.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-panels.html" afterPath="$PROJECT_DIR$/templates/sample/ui-panels.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-portlets.html" afterPath="$PROJECT_DIR$/templates/sample/ui-portlets.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-progressbars.html" afterPath="$PROJECT_DIR$/templates/sample/ui-progressbars.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-tabs.html" afterPath="$PROJECT_DIR$/templates/sample/ui-tabs.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/main/sample/ui-typography.html" afterPath="$PROJECT_DIR$/templates/sample/ui-typography.html" />
     </list>
     <ignored path="suriProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +91,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/suriProject$Test__db_sqlite3.coverage" NAME="Test: db.sqlite3 Coverage Results" MODIFIED="1479025080925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/suriProject$Test__db_sqlite3.coverage" NAME="Test: db.sqlite3 Coverage Results" MODIFIED="1481456147221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/suriProject$base.coverage" NAME="base Coverage Results" MODIFIED="1478922679503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/vEnvSuri/Lib/site-packages/django/db/backends/mysql" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -68,42 +120,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suriProject/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/suri/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding />
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="183" column="91" selection-start-line="183" selection-start-column="89" selection-end-line="183" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/suri/static/js/jquery.app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37198067">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="46" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.blockUI.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suri/static/js/jquery.blockUI.js">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suri/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suri/migrations/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suri/migrations/0001_initial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/suri/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09178744">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,29 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/suri/apps.py" />
-        <option value="$PROJECT_DIR$/suri/admin.py" />
-        <option value="$PROJECT_DIR$/suri/models.py" />
-        <option value="$PROJECT_DIR$/suri/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/suriProject/urls.py" />
-        <option value="$PROJECT_DIR$/suri/static/css/core.css" />
-        <option value="$PROJECT_DIR$/suri/static/css/variables.css" />
-        <option value="$PROJECT_DIR$/templates/main/init.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-other.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-chartist.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-flot.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-morris.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/components-grid.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-nvd3.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-peity.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/chart-sparkline.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/components-nestable-list.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/components-range-sliders.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/components-sweet-alert.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/components-widgets.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/extras-calendar.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/ui-tabs.html" />
-        <option value="$PROJECT_DIR$/templates/main/sample/ui-progressbars.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/ui-portlets.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/ui-panels.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/ui-notification.html" />
@@ -167,12 +220,35 @@
         <option value="$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/pages-404.html" />
         <option value="$PROJECT_DIR$/templates/main/sample/form-advanced.html" />
-        <option value="$PROJECT_DIR$/suriProject/settings.py" />
         <option value="$PROJECT_DIR$/suri/static/js/waves.js" />
-        <option value="$PROJECT_DIR$/suri/views.py" />
         <option value="$PROJECT_DIR$/templates/main/main.html" />
         <option value="$PROJECT_DIR$/templates/main/index.html" />
+        <option value="$PROJECT_DIR$/suri/static/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/main/error/pages-404.html" />
         <option value="$PROJECT_DIR$/suri/urls.py" />
+        <option value="$PROJECT_DIR$/templates/main/error/pages-500.html" />
+        <option value="$PROJECT_DIR$/templates/main/sample/components-grid.html" />
+        <option value="$PROJECT_DIR$/suriProject/urls.py" />
+        <option value="$PROJECT_DIR$/templates/suri/main.html" />
+        <option value="$PROJECT_DIR$/templates/sample/components-grid.html" />
+        <option value="$PROJECT_DIR$/suri/static/js/jquery.app.js" />
+        <option value="$PROJECT_DIR$/suri/static/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/templates/sample/ui-buttons.html" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/suriProject/settings.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/sample/ui-panels.html" />
+        <option value="$PROJECT_DIR$/templates/sample/ui-portlets.html" />
+        <option value="$PROJECT_DIR$/templates/sample/components-widgets.html" />
+        <option value="$PROJECT_DIR$/templates/sample/extras-email-template.html" />
+        <option value="$PROJECT_DIR$/templates/sample/form-advanced.html" />
+        <option value="$PROJECT_DIR$/templates/sample/form-wizard.html" />
+        <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/templates/sample/map-google.html" />
+        <option value="$PROJECT_DIR$/templates/sample/chart-chartist.html" />
+        <option value="$PROJECT_DIR$/templates/sample/chart-flot.html" />
+        <option value="$PROJECT_DIR$/templates/sample/extras-calendar.html" />
+        <option value="$PROJECT_DIR$/suri/views.py" />
       </list>
     </option>
   </component>
@@ -200,7 +276,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>RequiredAttributes</id>
+            <id>HtmlUnknownTarget</id>
           </State>
         </selected-state>
       </profile-state>
@@ -263,10 +339,6 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -314,6 +386,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suriProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suriProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suri" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -329,12 +419,16 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\suriProject\templates\suri" />
+      <recent name="D:\suriProject\templates" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\suriProject\templates\sample" />
+      <recent name="D:\suriProject\templates" />
       <recent name="D:\suriProject\suri\static\js" />
-      <recent name="D:\suriProject\suri\static\fonts" />
       <recent name="D:\suriProject\suri\static\css" />
       <recent name="D:\suriProject\suri\static" />
-      <recent name="D:\suriProject\templates\main" />
     </key>
   </component>
   <component name="RunManager" selected="Django tests.Test: db.sqlite3">
@@ -658,6 +752,12 @@
     <history-entry file="Test__db_sqlite3 - 2016.11.13 at 17h 18m 01s.xml">
       <configuration name="Test: db.sqlite3" configurationId="DjangoTestsConfigurationType" />
     </history-entry>
+    <history-entry file="Test__db_sqlite3 - 2016.12.11 at 20h 35m 40s.xml">
+      <configuration name="Test: db.sqlite3" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__db_sqlite3 - 2016.12.11 at 20h 35m 47s.xml">
+      <configuration name="Test: db.sqlite3" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1921000" />
@@ -672,35 +772,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27771854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32572615" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27771854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32572615" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@suriProject" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33125" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@suriProject" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -716,7 +816,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/suri/migrations/0001_initial.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -725,241 +832,391 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-coming-soon.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/index2.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-email-template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.142858">
+          <caret line="372" column="70" selection-start-line="372" selection-start-column="70" selection-end-line="372" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-maintenance.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/mail-compose.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-timeline.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/mail-inbox.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-advanced.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.714286">
+          <caret line="1738" column="42" selection-start-line="1738" selection-start-column="42" selection-end-line="1738" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-elements.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/mail-read.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-summernote.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/map-google.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-uploads.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/map-vector.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="144.28572">
+          <caret line="374" column="100" selection-start-line="374" selection-start-column="75" selection-end-line="374" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-wizard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.214286">
+          <caret line="1040" column="50" selection-start-line="1040" selection-start-column="50" selection-end-line="1040" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-wysiwig.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-500.html">
+    <entry file="file://$PROJECT_DIR$/templates/sample/form-xeditable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/icons-fontawesome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/icons-glyphicons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/icons-ionicons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/icons-materialdesign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/icons-themifyicon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/mail-compose.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.035714">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/mail-inbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.464286">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/mail-read.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/map-vector.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-500.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.428571">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-lock-screen.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-recoverpw.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/tables-basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/tables-datatable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="23.071428">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/tables-editable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.571428">
+          <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/pages-404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28836426">
+          <caret line="42" column="79" selection-start-line="42" selection-start-column="79" selection-end-line="42" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/map-google.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3524452">
+          <caret line="174" column="44" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/chart-chartist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.608769">
+          <caret line="177" column="44" selection-start-line="177" selection-start-column="44" selection-end-line="177" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/chart-flot.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51264757">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.571428">
+          <caret line="309" column="37" selection-start-line="309" selection-start-column="37" selection-end-line="309" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-gallery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.321428">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-invoice.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.035714">
+          <caret line="769" column="8" selection-start-line="769" selection-start-column="8" selection-end-line="769" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/sample/extras-calendar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.0">
+          <caret line="721" column="34" selection-start-line="721" selection-start-column="34" selection-end-line="721" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/vEnvSuri/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="75" selection-start-line="56" selection-start-column="75" selection-end-line="56" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2141707">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.6785714">
-          <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+          <caret line="93" column="51" selection-start-line="93" selection-start-column="51" selection-end-line="93" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-blank.html">
+    <entry file="file://$PROJECT_DIR$/templates/email-templates/action.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="39.892857">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/email-templates/alert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.428571">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/email-templates/billing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16020235">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4ea57d43-669c-4c81-91f6-35329459eca5/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-lock-screen.html">
+    <entry file="file://$PROJECT_DIR$/suriProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suri/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suri/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-recoverpw.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/tables-basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/tables-datatable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/tables-editable.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/tables-responsive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-panels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-notification.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-modals.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-checkbox-radio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-bootstrap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-progressbars.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/ui-portlets.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.928572">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/pages-404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-63.785713">
-          <caret line="94" column="11" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/form-advanced.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.464285">
-          <caret line="1509" column="19" selection-start-line="1509" selection-start-column="19" selection-end-line="1509" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/chart-flot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/sample/chart-chartist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.964285">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -967,124 +1224,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/suri/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suriProject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36714977">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/vEnvSuri/Lib/site-packages/django/core/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44927537">
-          <caret line="341" column="51" selection-start-line="341" selection-start-column="51" selection-end-line="341" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18357489">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54468805">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suriProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/static/js/wow.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="70" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/static/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.608769">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/static/plugins/d3/d3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39774558">
-          <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main/main.html">
+    <entry file="file://$PROJECT_DIR$/suri/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="91" selection-start-line="183" selection-start-column="89" selection-end-line="183" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/static/js/jquery.blockUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.09178744">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suri/static/js/jquery.app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37198067">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="46" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>

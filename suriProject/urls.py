@@ -1,6 +1,6 @@
 """suriProject URL Configuration
 
-The `urlpatterns` list routes URLs to views. For more information please see:
+The `urlpatterns` list routes URLs to views. For more infor tion please see:
     https://docs.djangoproject.com/en/1.9/topics/http/urls/
 Examples:
 Function views
@@ -17,8 +17,11 @@ Class-based views
                                 이 사이트의 컨텐츠 일람표 정도 된다.
                                 더 자세한 사항은 상단의 urlpatterns 주소에서 확인
 """
-from django.conf.urls import include, url
+from django.conf.urls import include, url, handler404, handler500
 from django.contrib import admin
+
+handler404 = 'suri.views.handler404'
+handler500 = 'suri.views.handler500'
 
 urlpatterns = [
     # Examples:
