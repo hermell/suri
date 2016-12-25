@@ -18,7 +18,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -30,17 +29,17 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',             #관리사이트
-    'django.contrib.auth',              #인증시스템
-    'django.contrib.contenttypes',    #컨텐트 타입들에 대한 프레임워크
-    'django.contrib.sessions',         #세션 프레임워크
-    'django.contrib.messages',         #메시징 프레임워크
-    'django.contrib.staticfiles',     #html과 같은 정적파일 관리를 위한 프레임워크
-    'suri'                                #테스트 용도의 App
+    'django.contrib.admin',  # 관리사이트
+    'django.contrib.auth',  # 인증시스템
+    'django.contrib.contenttypes',  # 컨텐트 타입들에 대한 프레임워크
+    'django.contrib.sessions',  # 세션 프레임워크
+    'django.contrib.messages',  # 메시징 프레임워크
+    'django.contrib.staticfiles',  # html과 같은 정적파일 관리를 위한 프레임워크
+    'sample',  # 테스트 용도의 App
+    'login_app'  # 테스트 용도의 App
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -75,7 +74,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'suriProject.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
@@ -85,13 +83,13 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'ENGINE': 'django.db.backends.mysql',
         # 'ENGINE': 'mysql.connector.django',
-        # 'USER': 'root',
+        # 'NAME': 'suridb',
+        # 'USER': 'hermel',
         # 'PASSWORD': 'alsghwkr1',
-        # 'HOST': '127.0.0.1',
+        # 'HOST': '25.73.105.176',
         # 'PORT': '3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -111,7 +109,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
@@ -123,11 +120,29 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
-
+USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATIC_ROOT = ''
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# os.path.join 설명
+# 해당 OS 형식에 맞도록 입력 받은 경로를 연결합니다. (입력 중간에 절대경로가 나오면 이전에
+# 취합된 경로는 제거하고 다시 연결합니다)
+
+# 예시
+# os.path.join('C:\\Python30', 'Script', 'test.py')
+# 'C:\\Python30\\Script\\test.py'
+# os.path.join('C:\\Python30', 'D:\\Test', 'test.py')
+# 'D:\\Test\\test.py'
+
+# 참고: http://devanix.tistory.com/298
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)

@@ -17,17 +17,23 @@ Class-based views
                                 이 사이트의 컨텐츠 일람표 정도 된다.
                                 더 자세한 사항은 상단의 urlpatterns 주소에서 확인
 """
-from django.conf.urls import include, url, handler404, handler500
+from django.conf.urls import include, url
 from django.contrib import admin
 
-handler404 = 'suri.views.handler404'
-handler500 = 'suri.views.handler500'
+handler404 = 'suriProject.views.handler404'
+handler500 = 'suriProject.views.handler500'
+
 
 urlpatterns = [
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'', include('suri.urls')),
+    url(r'^admin', include(admin.site.urls)),
+    url(r'^index', view='suriProject.views.go_init', name='index'),
+    # url(r'^sample', include('sample.urls'), name='sample'),
+    url(r'', view='suriProject.views.go_others', name='pages'),
+
 ]
+
+
