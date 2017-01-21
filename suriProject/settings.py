@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',  # 메시징 프레임워크
     'django.contrib.staticfiles',  # html과 같은 정적파일 관리를 위한 프레임워크
     'sample',  # 테스트 용도의 App
-    'login_app'  # 테스트 용도의 App
+    'login_app'  # 사용자 로그인 App
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -79,15 +79,15 @@ WSGI_APPLICATION = 'suriProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         # 'ENGINE': 'django.db.backends.mysql',
-        # 'ENGINE': 'mysql.connector.django',
-        # 'NAME': 'suridb',
-        # 'USER': 'hermel',
-        # 'PASSWORD': 'alsghwkr1',
-        # 'HOST': '25.73.105.176',
-        # 'PORT': '3306',
+        'ENGINE': 'mysql.connector.django',
+        'NAME': 'suridb',
+        'USER': 'hermel',
+        'PASSWORD': 'alsghwkr1',
+        'HOST': '25.73.105.176',
+        'PORT': '3306',
     }
 }
 

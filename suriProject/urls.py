@@ -31,6 +31,7 @@ urlpatterns = [
 
     url(r'^admin', include(admin.site.urls)),
     url(r'^index', view='suriProject.views.go_init', name='index'),
+    url(r'^login_app/create_user', view='login_app.views.create_user', name='login_app'),
     # url(r'^sample', include('sample.urls'), name='sample'),
     url(r'', view='suriProject.views.go_others', name='pages'),
 
