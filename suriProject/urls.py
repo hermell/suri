@@ -19,6 +19,9 @@ Class-based views
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from suriProject.views import go_init
+from login_app.views import usr_validation_chk
+from suriProject.views import go_others
 
 handler404 = 'suriProject.views.handler404'
 handler500 = 'suriProject.views.handler500'
@@ -30,10 +33,10 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin', include(admin.site.urls)),
-    url(r'^index', view='suriProject.views.go_init', name='index'),
-    url(r'^login_app/create_user', view='login_app.views.create_user', name='login_app'),
+    url(r'^index', go_init, name='index'),
+    url(r'^login_app/usr_validation_chk', usr_validation_chk, name='login_app'),
     # url(r'^sample', include('sample.urls'), name='sample'),
-    url(r'', view='suriProject.views.go_others', name='pages'),
+    url(r'', go_others, name='pages'),
 
 ]
 
