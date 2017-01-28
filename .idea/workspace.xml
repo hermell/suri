@@ -2,338 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdeb7d5a-bbc7-4a5a-90ff-142b08339e88" name="Default" comment="템플릿 분할, 앱 추가 등">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/suriProject.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/alert.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-book.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-call.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-chat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-data.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-hand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-more.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-note.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-send.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-sort.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/android-wifi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/archive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-down-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-down-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-down-c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-expand.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-left-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-left-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-left-c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-move.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-resize.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-shrink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-swap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-up-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-up-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/arrow-up-c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/at.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/battery-full.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/battery-half.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/battery-low.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/beaker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/beer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/bluetooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/bookmark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/briefcase.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/bug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/calculator.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/calendar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/camera.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/card.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/chatbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/chatboxes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/chatbubble.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/chatbubbles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/checkmark.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/chevron-down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/chevron-up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/clipboard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/clock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/close-round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/code.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/coffee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/compass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/compose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/contrast.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/disc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/document.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/drag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/earth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/edit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/egg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/eject.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/eye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/filing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/film-marker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/flash-off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/flash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/flask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/fork-repo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/fork.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/forward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/gear-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/gear-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/hammer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/headphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/help-buoy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/home.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/icecream.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/images.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/information.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ionic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-alarm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-albums.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-at.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-bell.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-bolt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-box.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-camera.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-cart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-clock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-cloudy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-cog.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-copy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-drag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-eye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-filing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-film.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-folder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-gear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-keypad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-locked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-medkit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-mic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-minus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-moon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-more.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-people.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-person.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-photos.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-pie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-rainy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-redo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-reload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-rewind.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-snowy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-sunny.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-time.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-timer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-trash.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-undo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ios7-world.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ipad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/iphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/ipod.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/jet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/key.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/knife.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/laptop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/leaf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/levels.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/lightbulb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/load-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/load-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/load-c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/load-d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/location.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/locked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/log-in.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/log-out.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/loop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/magnet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/man.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/map.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/medkit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/mic-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/mic-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/mic-c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/minus-round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/minus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/model-s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/monitor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/more.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/music-note.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/navicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/navigate.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/no-smoking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/nuclear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/paperclip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pause.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/person-add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/person.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pie-graph.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pinpoint.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/plane.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/play.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/playstation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/plus-round.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pound.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/power.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pricetag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/pricetags.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/printer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/radio-waves.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/record.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/reply-all.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/reply.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/search.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/settings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/shuffle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/social-rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/social-tux.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/speedometer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/spoon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/star.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/stats-bars.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/steam.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/stop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/thermometer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/thumbsdown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/thumbsup.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/trash-a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/trash-b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/umbrella.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/unlocked.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/usb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/videocamera.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/volume-high.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/volume-low.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/volume-mute.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/waterdrop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/wifi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/wineglass.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/woman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/wrench.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/png/512/xbox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/lib/mariadb-java-client-1.3.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/dataSources.local.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/dataSources/4ea57d43-669c-4c81-91f6-35329459eca5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/dataSources/4ea57d43-669c-4c81-91f6-35329459eca5/storage.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/sample/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/components.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/elements.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/magnific-popup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/menu_light.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/menu_md.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/pages.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/themify-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/css/variables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/SmoothScroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/detect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/fastclick.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery-1.9.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery-ui-1.10.1.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.app.index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.blockUI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.counterup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.easing.1.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.easing.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.magnific-popup.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.nicescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.scrollTo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.scrollTo.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.slimscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.slimscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.stellar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/jquery.sticky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/modernizr.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/skycons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/waves.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/waypoints.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/js/wow.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/css/themify-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/css/_ionicons-variables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/css/ionicons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suri/static/less/icons/ionicons/css/ionicons.min.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login_app/tests.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_app/models.py" afterPath="$PROJECT_DIR$/login_app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login_app/views.py" afterPath="$PROJECT_DIR$/login_app/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suriProject/urls.py" afterPath="$PROJECT_DIR$/suriProject/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/login_app/pages-login.html" afterPath="$PROJECT_DIR$/templates/login_app/pages-login.html" />
     </list>
     <ignored path="suriProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -364,6 +36,10 @@
         <option name="myItemId" />
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - suridb@25.73.105.176" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -375,11 +51,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pages-login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pages-login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login_app/pages-login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.016891891">
-              <caret line="166" column="18" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="18" />
+            <state vertical-scroll-proportion="-10.5">
+              <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/08496216-d196-4ba5-95a9-6d45c620151b/console.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -504,8 +190,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1932" />
-    <option name="height" value="1092" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1002,18 +688,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1932" height="1092" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31356838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3128998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.50319827" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.4978678" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32466182" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32365146" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.4968017" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1022,13 +710,11 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39937758" sideWeight="0.4968017" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="896" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@suriProject" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1070,13 +756,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/sample/pages/ui-panels.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/sample/pages/chart-nvd3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1341,6 +1020,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1433,8 +1113,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/login_app/pages-login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.016891891">
-          <caret line="166" column="18" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="18" />
+        <state vertical-scroll-proportion="-10.5">
+          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/08496216-d196-4ba5-95a9-6d45c620151b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
