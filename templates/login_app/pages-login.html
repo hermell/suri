@@ -193,7 +193,7 @@
 {#                })#}
 {#             });#}
 
-             var validChk = function() {
+             var emailVaildChk = function() {
 
                  //이메일 주소 유효성 검사
                  var email = $("#user_email").val();
@@ -201,8 +201,16 @@
                  var regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/;
                  var isValid;
 
-                  if ($.trim(email) != '' && email.match(regExp)) {
-                      isValid = true;
+                  if (email.match(regExp)) {
+                         isValid = $.ajax({
+                            url: '/login_app/usr_validation_chk',
+                            type: "POST",
+                            dataType: "json",
+                            data: {"user_email":email, "csrfmiddlewaretoken": "{{ csrf_token }}"},
+                            success: function(data) {
+                                return data.result;
+                            }
+                        });
                   } else {
                       isValid = false;
                   }
@@ -211,19 +219,20 @@
 
              $("#user_email").keyup(function(){
 
-                 var valie_chk_result = validChk();
+                 var valid_chk_result = emailVaildChk();
 
-                 if(valie_chk_result) {
-                     $.ajax({
-                        url: '/login_app/usr_validation_chk',
-                        type: "POST",
-                        dataType: "json",
-                        data: $("#register-form").serialize() + "&csrfmiddlewaretoken=" + "{{ csrf_token }}",
-                        success: function (data) {
-                            alert(data.result);
-                             $("#good").show();
-                        }
-                    });
+                 if(valid_chk_result) {
+{#                     $.ajax({#}
+{#                        url: '/login_app/usr_validation_chk',#}
+{#                        type: "POST",#}
+{#                        dataType: "json",#}
+{#                        data: $("#register-form").serialize() + "&csrfmiddlewaretoken=" + "{{ csrf_token }}",#}
+{#                        success: function (data) {#}
+{#                            alert(data.result);#}
+{#                             $("#good").show();#}
+{#                        }#}
+                     {#                    });#}
+                     $("#good").show();
                  } else {
                      $("#warning").show();
                  }
