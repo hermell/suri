@@ -201,14 +201,13 @@
                  var regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/;
                  var isValid;
 
-                  if (email == '' || email.match(regExp)) {
+                  if ($.trim(email) != '' && email.match(regExp)) {
                       isValid = true;
                   } else {
                       isValid = false;
                   }
-
                  return isValid;
-             }``;
+             };
 
              $("#user_email").keyup(function(){
 
@@ -221,7 +220,7 @@
                         dataType: "json",
                         data: $("#register-form").serialize() + "&csrfmiddlewaretoken=" + "{{ csrf_token }}",
                         success: function (data) {
-                           alert(data.result);
+                            alert(data.result);
                              $("#good").show();
                         }
                     });
