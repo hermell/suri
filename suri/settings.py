@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'suriProject.urls'
+ROOT_URLCONF = 'suri.urls'
 
 TEMPLATES = [
     {
