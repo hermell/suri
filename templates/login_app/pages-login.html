@@ -83,8 +83,7 @@
 
 
 <!-- Right Sidebar -->
-<div id="user-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-     style="display: none;">
+<div id="user-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
         <div class="custom-modal-title">
             <button type="button" class="close m-t-5" data-dismiss="modal" aria-hidden="true">
@@ -93,12 +92,12 @@
             <div class="panel-title"><h3 class="h4">이곳에서 회원가입을 해주세요</h3></div>
         </div>
         <div class="modal-content">
-            <div class="wrapper-page">
-                <form class="form-horizontal m-t-20" id="register-form" action="../index.html">
-                    <div class="form-group has-">
+            <div class="wrapper-page" style="width:100%;">
+                <form class="form-horizontal" id="register-form" action="../index.html">
+                    <div class="form-group">
                         <label for="user_email" class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-9">
-                            <input class="form-control" type="email" class="form-control" id="user_email"
+                            <input class="form-control " type="email" class="form-control" id="user_email"
                                    name="user_email" placeholder="이메일 주소를 입력하세요">
                             <i class="md md-email form-control-feedback l-h-34"></i>
                         </div>
@@ -300,7 +299,7 @@
                             isValid["message"] = "패스워드가 서로 다릅니다.";
                         }
                     } else {
-                        isValid["message"] = "패스워드는 8 ~ 15자리이며,\n 특수문자/숫자가 한개 이상 포함되어야 합니다.";
+                        isValid["message"] = "패스워드는 8 ~ 15자리이며, 특수문자/숫자가 한개 이상 포함되어야 합니다.";
                     }
                 }
 

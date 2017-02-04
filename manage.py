@@ -7,7 +7,7 @@ import sys
 # 더 자세한 사항이 궁금하면 djnago-admin.py and manage.py 를 읽어본다.
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "suriProject.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "suri.settings")
 
     from django.core.management import execute_from_command_line
 
