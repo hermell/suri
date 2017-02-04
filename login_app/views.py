@@ -9,12 +9,13 @@ from django.http import HttpResponse
 def go_login_page(request):
     return render(request, 'login_app/pages-login.html', {})
 
-class usrDuplChk:
+class usr_dupl_chk:
     # url에서 받아올 때 괄호를 사용한 정규식이 있다면 argument를 두개 받는 메소드를 생성해야 함
     def usr_duplication_chk(request, split_char):
+
+        #request.path의
         chk_info = re.sub("/(\w)*/", "",request.path).replace("_validation_chk","")
         result = None
-        print(chk_info)
 
         if chk_info == "email":
             result = confirm_registered_info('email', request.POST['user_email'])

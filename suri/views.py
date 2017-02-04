@@ -8,8 +8,6 @@ def go_init(request):
 
 def go_others(request):
 
-    print(request.path)
-
     original_path = request.path
     modefied_path = ''
     path_length = original_path.__len__()
