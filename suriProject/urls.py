@@ -20,8 +20,8 @@ Class-based views
 from django.conf.urls import include, url
 from django.contrib import admin
 from suriProject.views import go_init
-from login_app.views import usr_validation_chk
 from suriProject.views import go_others
+from login_app.views import usrDuplChk
 
 handler404 = 'suriProject.views.handler404'
 handler500 = 'suriProject.views.handler500'
@@ -34,7 +34,7 @@ urlpatterns = [
 
     url(r'^admin', include(admin.site.urls)),
     url(r'^index', go_init, name='index'),
-    url(r'^login_app/usr_validation_chk', usr_validation_chk, name='login_app'),
+    url(r'^login_app/(\w)*validation_chk', usrDuplChk.usr_duplication_chk, name='login_app'),
     # url(r'^sample', include('sample.urls'), name='sample'),
     url(r'', go_others, name='pages'),
 
