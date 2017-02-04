@@ -73,9 +73,6 @@
                 <a href="#user-register" class="text-muted waves-effect waves-light" data-toggle="modal">
                     계정이 없으신가요?
                 </a>
-                {#                    <a href="#" data-toggle="modal" data-target="#add-category" class="text-muted waves-effect waves-light" data-animation="door" data-plugin="custommodal" data-overlaySpeed="200" data-overlayColor="#36404a">#}
-                {#                        계정이 없으신가요?#}
-                {#                    </a>#}
             </div>
         </div>
     </form>
@@ -98,7 +95,7 @@
         <div class="modal-content">
             <div class="wrapper-page">
                 <form class="form-horizontal m-t-20" id="register-form" action="../index.html">
-                    <div class="form-group">
+                    <div class="form-group has-">
                         <label for="user_email" class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-9">
                             <input class="form-control" type="email" class="form-control" id="user_email"
@@ -194,17 +191,15 @@
                 //이메일 주소 유효성 검사
                 var email = $("#user_email").val();
                 //이메일 정규식
-                var regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/
-                var isValid = {};
+                var regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/;
+                var isValid = {result:false};
 
                 if ($.trim(email) == "") {
-                    isValid["result"] = false;
                     isValid["message"] = "이메일 주소를 입력하세요.";
                 } else {
                     if (email.match(regExp)) {
                         isValid["result"] = true;
                     } else {
-                        isValid["result"] = false;
                         isValid["message"] = "이메일 주소가 형식에 맞지 않습니다.";
                     }
                 }
@@ -239,13 +234,17 @@
             var nicknameVaildChk = function () {
 
                 var nickname = $("#nick_name").val();
-                var isValid = {};
+                var regExp = /^([0-9]|[a-z]|[A-Z]|[가-힣])*$/;
+                var isValid = {result:false};
 
                 if ($.trim(nickname) == "") {
-                    isValid["result"] = false;
                     isValid["message"] = "사용할 닉네임을 입력하세요";
                 } else {
-                    isValid["result"] = true;
+                    if (nickname.match(regExp)) {
+                        isValid["result"] = true;
+                    } else {
+                        isValid["message"] = "닉네임에는 한글/영문/숫자만 사용할 수 있습니다.";
+                    }
                 }
 
                 return isValid;
@@ -267,7 +266,7 @@
 
                         //중복된 id인 경우
                         if (!isRegistered.result) {
-                            isRegistered["message"] = "이미 등록된 닉네임입니다. 다른 닉네임을 사용하시기 바랍니다.";
+                            isRegistered["message"] = "이미 등록된 닉네임입니다.";
                         }
                         return isRegistered;
                     }
@@ -275,20 +274,54 @@
                 return isRegistered;
             };
 
+        var pwdVaildChk = function () {
+
+                var password = $("#password").val();
+                var rePassword = $("#re-password").val();
+                var regExp = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+                var isValid = {result:false};
+
+                if ($.trim(password) == "") {
+                    isValid["message"] = "패스워드를 입력하세요";
+                } else {
+                    if (password.match(regExp)) {
+                        console.log(password);
+                        console.log(rePassword);
+                        console.log(password == rePassword);
+                        if(password == rePassword) {
+                            isValid["result"] = true;
+                        } else {
+                            isValid["message"] = "패스워드가 서로 다릅니다.";
+                        }
+                    } else {
+                        isValid["message"] = "패스워드는 8 ~ 15자리이며,\n 특수문자/숫자가 한개 이상 포함되어야 합니다.";
+                    }
+                }
+
+                return isValid;
+            };
+
             var validChkFuncs = [
-                {id:"user_email", func: emailVaildChk, checked: false},
-                {id:"user_email", func: emailDuplChk, checked: false},
-                {id:"nick_name", func: nicknameVaildChk, checked: false},
-                {id:"nick_name", func: nickNameDuplChk, checked: false},
+                {id:"#user_email", func: emailVaildChk, checked: false},
+                {id:"#user_email", func: emailDuplChk, checked: false},
+                {id:"#nick_name", func: nicknameVaildChk, checked: false},
+                {id:"#nick_name", func: nickNameDuplChk, checked: false},
+                {id:"#password, #re-password", func: pwdVaildChk, checked: false}
             ];
 
-        $("#user_email, #nick_name, #password, #re-password").keyup(function (e) {
+        $("#user_email, #nick_name, #password, #re-password").bind("keyup change", function (e) {
 
-            var validChkFuncResult = {};
+            if(e.type == "keyup" && (e.target.id == "user_email" || e.target.id == "nick_name")) {
+                return false;
+            }
+
+            var validChkFuncResult = {result:true};
 
             $(validChkFuncs).each(function (index, jsonObj) {
 
-                if(validChkFuncs[index].id == e.target.id) {
+                console.log(validChkFuncs[index].id.indexOf(e.target.id));
+
+                if(validChkFuncs[index].id.indexOf(e.target.id) != -1) {
                     validChkFuncs[index].checked = false;
                 }
 
@@ -297,7 +330,10 @@
                     validChkFuncs[index].checked = validChkFuncResult["result"];
 
                     if (!validChkFuncResult["result"]) {
+                        validChkFuncResult["id"] = validChkFuncs[index].id;
                         return false;
+                    } else {
+                        $(validChkFuncs[index].id).closest(".form-group").addClass("has-success").removeClass("has-error");
                     }
                 }
             });
@@ -309,10 +345,15 @@
                 $("#good").hide();
                 $("#warning_text").html(validChkFuncResult["message"]);
                 $("#warning").show();
+
+                if(validChkFuncResult["id"] == "#user_email" || validChkFuncResult["id"] == "#nick_name") {
+                    $(validChkFuncResult["id"]).focus();
+                }
+
+                $(validChkFuncResult["id"]).closest(".form-group").addClass("has-error").removeClass("has-success");
             }
         });
     });
 </script>
-
 </body>
 </html>
