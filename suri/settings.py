@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',  # 메시징 프레임워크
     'django.contrib.staticfiles',  # html과 같은 정적파일 관리를 위한 프레임워크
     'sample',  # 테스트 용도의 App
-    'login_app'  # 사용자 로그인 App
+    'login_app',  # 사용자 로그인 App
+    'suriBoard' # 자유 게시판 app
 ]
 
 MIDDLEWARE_CLASSES = [
