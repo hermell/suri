@@ -186,12 +186,17 @@
 <script>
     $(document).ready(function () {
 
+        //이메일 주소 유효성 검사 function
         var emailVaildChk = function () {
 
-                //이메일 주소 유효성 검사
+                //이메일 value 취득
                 var email = $("#user_email").val();
+
                 //이메일 정규식
                 var regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/;
+
+                //유효성 여부 value (default: false)
+                //유효성 검사
                 var isValid = {result:false};
 
                 if ($.trim(email) == "") {

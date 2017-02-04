@@ -14,10 +14,11 @@ class usrDuplChk:
     def usr_duplication_chk(request, split_char):
         chk_info = re.sub("/(\w)*/", "",request.path).replace("_validation_chk","")
         result = None
+        print(chk_info)
 
-        if(chk_info == "email"):
+        if chk_info == "email":
             result = confirm_registered_info('email', request.POST['user_email'])
-        elif(chk_info == "nickname"):
+        elif chk_info == "nickname":
             result = confirm_registered_info('nickname', request.POST['nickname'])
         else:
             result = False
