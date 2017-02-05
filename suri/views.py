@@ -4,7 +4,7 @@ from django.template import RequestContext
 
 # Create your views here.
 def go_init(request):
-    return render(request, 'index.html', {})
+    return render(request, 'templates/index.html', {})
 
 def go_others(request):
 

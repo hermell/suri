@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',  # 메시징 프레임워크
     'django.contrib.staticfiles',  # html과 같은 정적파일 관리를 위한 프레임워크
     'sample',  # 테스트 용도의 App
-    'login_app',  # 사용자 로그인 App
-    'suriBoard' # 자유 게시판 app
+    'user_app',  # 사용자 로그인 App
+    'suriBoard'  # 자유 게시판 app
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -59,7 +59,11 @@ ROOT_URLCONF = 'suri.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        # 'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [
+                  os.path.join(BASE_DIR, ''),
+                  os.path.join(BASE_DIR, 'user_app/template'),
+                 ]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -145,5 +149,6 @@ STATIC_URL = '/static/'
 # 참고: http://devanix.tistory.com/298
 
 STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'user_app/static'),
     os.path.join(BASE_DIR, 'static'),
 )
