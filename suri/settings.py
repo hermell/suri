@@ -149,6 +149,8 @@ STATIC_URL = '/static/'
 # 참고: http://devanix.tistory.com/298
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'user_app/static'),
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'ueer_app/static'),
 )
+
+

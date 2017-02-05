@@ -17,6 +17,7 @@ def go_others(request):
     # 디버깅 결과 url 패턴이 ""로 들어오는 경우의 __len__ = 1 임
     # 왜인지는 아직 모름..ㅠㅠ
     # 일단 디버깅 결과를 토대로 아래와 같이 if문 작성
+    print(path_length)
     if path_length > 1:
         modefied_path = original_path[1:path_length]
     else:

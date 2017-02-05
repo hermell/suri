@@ -25,17 +25,18 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' %}"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js' %}"></script>
+{#            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' %}"></script>#}
+{#            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js' %}"></script>#}
             <![endif]-->
 </head>
 <body>
 
 <div class="wrapper-page">
     <div class="text-center">
-        <a href="../index.html" class="logo logo-lg"><i class="md md-equalizer"></i> <span>Minton</span> </a>
+        <a href="../../../templates/index.html" class="logo logo-lg"><i class="md md-equalizer"></i> <span>Minton</span>
+        </a>
     </div>
-    <form class="form-horizontal m-t-20" action="../index.html">
+    <form class="form-horizontal m-t-20" action="../../../templates/index.html">
         <div class="form-group">
             <div class="col-xs-12">
                 <input class="form-control" type="text" required="" placeholder="ID">
@@ -83,7 +84,8 @@
 
 
 <!-- Right Sidebar -->
-<div id="user-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+<div id="user-register" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="display: none;">
     <div class="modal-dialog">
         <div class="custom-modal-title">
             <button type="button" class="close m-t-5" data-dismiss="modal" aria-hidden="true">
@@ -93,7 +95,7 @@
         </div>
         <div class="modal-content">
             <div class="wrapper-page" style="width:100%;">
-                <form class="form-horizontal" id="register-form" action="../index.html">
+                <form class="form-horizontal" id="register-form" action="../../../templates/index.html">
                     <div class="form-group">
                         <label for="email" class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-9">
@@ -140,7 +142,7 @@
 
                     <div class="form-group text-right m-t-20">
                         <div class="col-xs-12">
-                            <button class="btn btn-primary btn-custom waves-effect waves-light w-md" type="submit">
+                            <button id="register" class="btn btn-primary btn-custom waves-effect waves-light w-md">
                                 회원가입
                             </button>
                         </div>
@@ -186,147 +188,142 @@
     $(document).ready(function () {
 
         //이메일 주소 유효성 검사 function
-        var emailVaildChk = function () {
+        const emailVaildChk = function () {
 
-                //이메일 value 취득
-                var email = $("#email").val();
+            //이메일 value 취득
+            const email = $("#email").val();
 
-                //이메일 정규식
-                var regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/;
+            //이메일 정규식
+            const regExp = /[0-9a-zA-Z][_0-9a-zA-Z-]*@[_0-9a-zA-Z-]+(\.[_0-9a-zA-Z-]+){1,2}$/;
 
-                //유효성 여부 value (default: false)
-                //유효성 검사
-                var isValid = {result:false};
+            //유효성 여부 value (default: false)
+            //유효성 검사
+            let isValid = {result: false};
 
-                if ($.trim(email) == "") {
-                    isValid["message"] = "이메일 주소를 입력하세요.";
+            if ($.trim(email) == "") {
+                isValid["message"] = "이메일 주소를 입력하세요.";
+            } else {
+                if (email.match(regExp)) {
+                    isValid["result"] = true;
                 } else {
-                    if (email.match(regExp)) {
+                    isValid["message"] = "이메일 주소가 형식에 맞지 않습니다.";
+                }
+            }
+            return isValid;
+        };
+
+        //이메일 중복 체크
+        const emailDuplChk = function () {
+
+            const email = $("#email").val();
+
+            let isRegistered = {};
+
+            $.ajax({
+                url: '/login/email_validation_chk',
+                type: "POST",
+                dataType: "json",
+                async: false,                   //ajax의 결과값을 변수에 할당하기 위해서는 비동기 여부를 false로 설정
+                data: {"email": email, "csrfmiddlewaretoken": "{{ csrf_token }}"},
+                success: function (data) {
+                    isRegistered["result"] = data.result;
+
+                    //중복된 id인 경우
+                    if (!isRegistered.result) {
+                        isRegistered["message"] = "이미 등록된 이메일 주소입니다.";
+                    }
+                    return isRegistered;
+                }
+            });
+            return isRegistered;
+        };
+
+        const nicknameVaildChk = function () {
+
+            const nickname = $("#nick_name").val();
+            const regExp = /^([0-9]|[a-z]|[A-Z]|[가-힣])*$/;
+            let isValid = {result: false};
+
+            if ($.trim(nickname) == "") {
+                isValid["message"] = "사용할 닉네임을 입력하세요";
+            } else {
+                if (nickname.match(regExp)) {
+                    isValid["result"] = true;
+                } else {
+                    isValid["message"] = "닉네임에는 한글/영문/숫자만 사용할 수 있습니다.";
+                }
+            }
+
+            return isValid;
+        };
+
+        const nickNameDuplChk = function () {
+
+            const nickname = $("#nick_name").val();
+            let isRegistered = {};
+
+            $.ajax({
+                url: '/login/nickname_validation_chk',
+                type: "POST",
+                dataType: "json",
+                async: false,                   //ajax의 결과값을 변수에 할당하기 위해서는 비동기 여부를 false로 설정
+                data: {"nickname": nickname, "csrfmiddlewaretoken": "{{ csrf_token }}"},
+                success: function (data) {
+                    isRegistered["result"] = data.result;
+
+                    //중복된 id인 경우
+                    if (!isRegistered.result) {
+                        isRegistered["message"] = "이미 등록된 닉네임입니다.";
+                    }
+                    return isRegistered;
+                }
+            });
+            return isRegistered;
+        };
+
+        const pwdVaildChk = function () {
+
+            const password = $("#password").val();
+            const rePassword = $("#re-password").val();
+            const regExp = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
+            let isValid = {result: false};
+
+            if ($.trim(password) == "") {
+                isValid["message"] = "패스워드를 입력하세요";
+            } else {
+                if (password.match(regExp)) {
+                    if (password == rePassword) {
                         isValid["result"] = true;
                     } else {
-                        isValid["message"] = "이메일 주소가 형식에 맞지 않습니다.";
+                        isValid["message"] = "패스워드가 서로 다릅니다.";
                     }
-                }
-                return isValid;
-            };
-
-            //이메일 중복 체크
-            var emailDuplChk = function () {
-
-                var email = $("#email").val();
-
-                var isRegistered = {};
-
-                $.ajax({
-                    url: '/login/email_validation_chk',
-                    type: "POST",
-                    dataType: "json",
-                    async: false,                   //ajax의 결과값을 변수에 할당하기 위해서는 비동기 여부를 false로 설정
-                    data: {"email": email, "csrfmiddlewaretoken": "{{ csrf_token }}"},
-                    success: function (data) {
-                        isRegistered["result"] = data.result;
-
-                        //중복된 id인 경우
-                        if (!isRegistered.result) {
-                            isRegistered["message"] = "이미 등록된 이메일 주소입니다.";
-                        }
-                        return isRegistered;
-                    }
-                });
-                return isRegistered;
-            };
-
-            var nicknameVaildChk = function () {
-
-                var nickname = $("#nick_name").val();
-                var regExp = /^([0-9]|[a-z]|[A-Z]|[가-힣])*$/;
-                var isValid = {result:false};
-
-                if ($.trim(nickname) == "") {
-                    isValid["message"] = "사용할 닉네임을 입력하세요";
                 } else {
-                    if (nickname.match(regExp)) {
-                        isValid["result"] = true;
-                    } else {
-                        isValid["message"] = "닉네임에는 한글/영문/숫자만 사용할 수 있습니다.";
-                    }
+                    isValid["message"] = "패스워드는 8 ~ 15자리이며, 특수문자/숫자가 한개 이상 포함되어야 합니다.";
                 }
+            }
 
-                return isValid;
-            };
+            return isValid;
+        };
 
-            var nickNameDuplChk = function () {
-
-                var nickname = $("#nick_name").val();
-                var isRegistered = {};
-
-                $.ajax({
-                    url: '/login/nickname_validation_chk',
-                    type: "POST",
-                    dataType: "json",
-                    async: false,                   //ajax의 결과값을 변수에 할당하기 위해서는 비동기 여부를 false로 설정
-                    data: {"nickname": nickname, "csrfmiddlewaretoken": "{{ csrf_token }}"},
-                    success: function (data) {
-                        isRegistered["result"] = data.result;
-
-                        //중복된 id인 경우
-                        if (!isRegistered.result) {
-                            isRegistered["message"] = "이미 등록된 닉네임입니다.";
-                        }
-                        return isRegistered;
-                    }
-                });
-                return isRegistered;
-            };
-
-        var pwdVaildChk = function () {
-
-                var password = $("#password").val();
-                var rePassword = $("#re-password").val();
-                var regExp = /^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*$/;
-                var isValid = {result:false};
-
-                if ($.trim(password) == "") {
-                    isValid["message"] = "패스워드를 입력하세요";
-                } else {
-                    if (password.match(regExp)) {
-                        console.log(password);
-                        console.log(rePassword);
-                        console.log(password == rePassword);
-                        if(password == rePassword) {
-                            isValid["result"] = true;
-                        } else {
-                            isValid["message"] = "패스워드가 서로 다릅니다.";
-                        }
-                    } else {
-                        isValid["message"] = "패스워드는 8 ~ 15자리이며, 특수문자/숫자가 한개 이상 포함되어야 합니다.";
-                    }
-                }
-
-                return isValid;
-            };
-
-            var validChkFuncs = [
-                {id:"#email", func: emailVaildChk, checked: false},
-                {id:"#email", func: emailDuplChk, checked: false},
-                {id:"#nick_name", func: nicknameVaildChk, checked: false},
-                {id:"#nick_name", func: nickNameDuplChk, checked: false},
-                {id:"#password, #re-password", func: pwdVaildChk, checked: false}
-            ];
+        let validChkFuncs = [
+            {id: "#email", func: emailVaildChk, checked: false},
+            {id: "#email", func: emailDuplChk, checked: false},
+            {id: "#nick_name", func: nicknameVaildChk, checked: false},
+            {id: "#nick_name", func: nickNameDuplChk, checked: false},
+            {id: "#password, #re-password", func: pwdVaildChk, checked: false}
+        ];
 
         $("#email, #nick_name, #password, #re-password").bind("keyup change", function (e) {
 
-            if(e.type == "keyup" && (e.target.id == "email" || e.target.id == "nick_name")) {
+            if (e.type == "keyup" && (e.target.id == "email" || e.target.id == "nick_name")) {
                 return false;
             }
 
-            var validChkFuncResult = {result:true};
+            let validChkFuncResult = {result: true};
 
             $(validChkFuncs).each(function (index, jsonObj) {
 
-                console.log(validChkFuncs[index].id.indexOf(e.target.id));
-
-                if(validChkFuncs[index].id.indexOf(e.target.id) != -1) {
+                if (validChkFuncs[index].id.indexOf(e.target.id) != -1) {
                     validChkFuncs[index].checked = false;
                 }
 
@@ -351,12 +348,53 @@
                 $("#warning_text").html(validChkFuncResult["message"]);
                 $("#warning").show();
 
-                if(validChkFuncResult["id"] == "#email" || validChkFuncResult["id"] == "#nick_name") {
+                if (validChkFuncResult["id"] == "#email" || validChkFuncResult["id"] == "#nick_name") {
                     $(validChkFuncResult["id"]).focus();
                 }
 
                 $(validChkFuncResult["id"]).closest(".form-group").addClass("has-error").removeClass("has-success");
             }
+        });
+
+        $("#register").click(function () {
+
+            let valid_chk = true;
+
+            $(validChkFuncs).each(function (index, jsonObj) {
+
+                if (!validChkFuncs[index].checked) {
+                    alert("회원 가입을 위한 정확한 정보를 기재해 주세요.");
+                    valid_chk = false;
+                    return false;
+                }
+            });
+
+            if (valid_chk) {
+
+                const email = $("#email").val();
+                const nickname = $("#nick_name").val();
+                const password = $("#password").val();
+
+                $.ajax({
+                    url: '/login/user_insert',
+                    type: "POST",
+                    dataType: "json",
+                    async: false,                   //ajax의 결과값을 변수에 할당하기 위해서는 비동기 여부를 false로 설정
+                    data: {
+                        "email": email,
+                        "nickname": nickname,
+                        "password": password,
+                        "csrfmiddlewaretoken": "{{ csrf_token }}"
+                    },
+                    success: function (data) {
+                        alert(data.result);
+                    }
+                });
+
+            } else {
+                return false;
+            }
+
         });
     });
 </script>

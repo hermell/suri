@@ -21,7 +21,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 from suri.views import go_init, go_others
-from user_app.login.views import usr_dupl_chk
 
 handler404 = 'suri.views.handler404'
 handler500 = 'suri.views.handler500'
@@ -34,7 +33,6 @@ urlpatterns = [
 
     url(r'^admin', include(admin.site.urls)),
     url(r'^index', go_init, name='index'),
-    url(r'^login/(\w)*validation_chk', usr_dupl_chk.usr_duplication_chk, name='login'),
-    # url(r'^sample', include('sample.urls'), name='sample'),
+    url(r'^login/', include('user_app.urls')),
     url(r'', go_others, name='pages'),
 ]

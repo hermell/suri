@@ -3,7 +3,7 @@ import re
 from django.http import JsonResponse
 from django.shortcuts import render
 
-from user_app.login.user import confirm_registered_info
+from user_app.login.user import confirm_registered_info, insert_usr_info
 
 
 # Create your views here.
@@ -17,13 +17,15 @@ class usr_dupl_chk:
 
         #request.path의
         chk_info = re.sub("/(\w)*/", "",request.path).replace("_validation_chk","")
-        # result = None
-
-        # if chk_info == "email":
         result = confirm_registered_info(chk_info, request.POST[chk_info])
-        # elif chk_info == "nickname":
-        #     result = confirm_registered_info('nickname', request.POST['nickname'])
-        # else:
-        #     result = False
-
         return JsonResponse({'result': result})
+
+class usr_management:
+
+    def usr_insert(request, split_char):
+
+        usr_info = request.POST
+        result = insert_usr_info(usr_info)
+        return JsonResponse({'result': result})
+
+
