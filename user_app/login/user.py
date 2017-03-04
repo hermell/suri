@@ -1,4 +1,4 @@
-from user_app.login.models import User
+from user_app.models import User
 
 # Create your tests here.
 def confirm_registered_info(col_name, usr_info) :
@@ -18,6 +18,13 @@ def confirm_registered_info(col_name, usr_info) :
 
 def insert_usr_info(usr_info):
 
-    user = User(email=usr_info["email"], nickname=usr_info["nickname"], password=usr_info["password"])
-    result = user.save()
+    result = True
+
+    try:
+        user = User(email=usr_info["email"], nickname=usr_info["nickname"], password=usr_info["password"])
+        user.save(force_insert=True)
+    except Exception as e:
+        print(e.args[0])
+        result = False
+
     return result
