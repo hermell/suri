@@ -2385,7 +2385,7 @@
 
     // MOMENTS
 
-    // Setting the hour should keep the time, because the user_app explicitly
+    // Setting the hour should keep the time, because the user explicitly
     // specified which hour he wants. So trying to maintain the same hour (in
     // a new timezone) makes sense. Adding/subtracting hours does not follow
     // this rule.
@@ -9624,7 +9624,7 @@
             y : 'рік',
             yy : uk__relativeTimeWithPlural
         },
-        // M. E.: those two are virtually unused but a user_app might want to implement them for his/her website for some reason
+        // M. E.: those two are virtually unused but a user might want to implement them for his/her website for some reason
         meridiemParse: /ночі|ранку|дня|вечора/,
         isPM: function (input) {
             return /^(дня|вечора)$/.test(input);

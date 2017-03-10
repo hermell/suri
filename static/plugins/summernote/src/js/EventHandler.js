@@ -373,7 +373,7 @@ define([
      * attach eventhandler
      *
      * @param {Object} layoutInfo - layout Informations
-     * @param {Object} options - user_app options include custom event handlers
+     * @param {Object} options - user options include custom event handlers
      */
     this.attach = function (layoutInfo, options) {
       // handlers for editable

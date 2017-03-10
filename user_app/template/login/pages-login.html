@@ -9,6 +9,8 @@
     <meta name="author" content="Coderthemes">
 
     <link rel="shortcut icon" href="{% static 'images/favicon_1.ico' %}">
+    <link href="{% static 'plugins/sweetalert/dist/sweetalert.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'plugins/switchery/switchery.min.css' %}" rel="stylesheet" />
 
     <title>Minton - Responsive Admin Dashboard Template</title>
 
@@ -95,7 +97,7 @@
         </div>
         <div class="modal-content">
             <div class="wrapper-page" style="width:100%;">
-                <form class="form-horizontal" id="register-form" action="../../../templates/index.html">
+                <form class="form-horizontal" id="register-form">
                     <div class="form-group">
                         <label for="email" class="col-sm-3 control-label">Email</label>
                         <div class="col-sm-9">
@@ -142,7 +144,7 @@
 
                     <div class="form-group text-right m-t-20">
                         <div class="col-xs-12">
-                            <button id="register" class="btn btn-primary btn-custom waves-effect waves-light w-md">
+                            <button type="button" id="register" class="btn btn-primary btn-custom waves-effect waves-light w-md">
                                 회원가입
                             </button>
                         </div>
@@ -184,8 +186,13 @@
 <script src="{% static 'plugins/custombox/dist/custombox.min.js' %}"></script>
 <script src="{% static 'plugins/custombox/dist/legacy.min.js' %}"></script>
 
+<!-- Sweet Alert -->
+<script src="{% static 'plugins/sweetalert/dist/sweetalert.min.js' %}"></script>
+<script src="{% static 'pages/jquery.sweet-alert.init.js' %}"></script>
+
 <script>
     $(document).ready(function () {
+
 
         //이메일 주소 유효성 검사 function
         const emailVaildChk = function () {
@@ -241,7 +248,7 @@
         const nicknameVaildChk = function () {
 
             const nickname = $("#nick_name").val();
-            const regExp = /^([0-9]|[a-z]|[A-Z]|[가-힣])*$/;
+            const regExp = /^([0-9]|[a-z]|[A-Z]|[가-힣]){1,10}$/;
             let isValid = {result: false};
 
             if ($.trim(nickname) == "") {
@@ -250,7 +257,7 @@
                 if (nickname.match(regExp)) {
                     isValid["result"] = true;
                 } else {
-                    isValid["message"] = "닉네임에는 한글/영문/숫자만 사용할 수 있습니다.";
+                    isValid["message"] = "닉네임으로 10자 이내의 한글/영문/숫자만 사용할 수 있습니다.";
                 }
             }
 
@@ -359,8 +366,9 @@
         $("#register").click(function () {
 
             let valid_chk = true;
+            let insert_result = true;
 
-            $(validChkFuncs).each(function (index, jsonObj) {
+            $(validChkFuncs).each(function (index) {
 
                 if (!validChkFuncs[index].checked) {
                     alert("회원 가입을 위한 정확한 정보를 기재해 주세요.");
@@ -387,7 +395,7 @@
                         "csrfmiddlewaretoken": "{{ csrf_token }}"
                     },
                     success: function (data) {
-                        alert(data.result);
+                        insert_result = data.result;
                     }
                 });
 
@@ -395,6 +403,15 @@
                 return false;
             }
 
+            if(insert_result){
+                swal("등록성공", "회원가입이 완료되었습니다. 로그인해 주시기 바랍니다.", "success");
+            } else {
+                swal({
+                    title: "등록실패",
+                    text: "회원등록 중 오류가 발생했습니다. 관리자에게 문의하시기 바랍니다.",
+                    imageUrl: "{% static 'images/error.jpg'%}"
+                });
+            }
         });
     });
 </script>

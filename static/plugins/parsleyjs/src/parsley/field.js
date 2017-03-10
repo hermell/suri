@@ -170,7 +170,7 @@ define('parsley/field', [
     _bindConstraints: function () {
       var constraints = [], constraintsByName = {};
 
-      // clean all existing DOM constraints to only keep javascript user_app constraints
+      // clean all existing DOM constraints to only keep javascript user constraints
       for (var i = 0; i < this.constraints.length; i++)
         if (false === this.constraints[i].isDomConstraint) {
           constraints.push(this.constraints[i]);

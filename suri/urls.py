@@ -34,5 +34,6 @@ urlpatterns = [
     url(r'^admin', include(admin.site.urls)),
     url(r'^index', go_init, name='index'),
     url(r'^login/', include('user_app.urls')),
+    url(r'^mainframe/', include('mainframe_app.urls')),
     url(r'', go_others, name='pages'),
 ]

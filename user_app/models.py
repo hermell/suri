@@ -10,5 +10,3 @@ class User(models.Model):
 
     class Meta:
         db_table = "TB_USR_INFO"
-
-

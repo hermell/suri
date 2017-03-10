@@ -68,7 +68,7 @@
                     "^" +
                     // protocol identifier
                     "(?:(?:" + protocol + ")://)" +
-                    // user_app:pass authentication
+                    // user:pass authentication
                     "(?:\\S+(?::\\S*)?@)?" +
                     "(?:" +
                     // IP address exclusion

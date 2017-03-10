@@ -55,7 +55,7 @@ var lastFocusedButton;
 
 /*
  * Global sweetAlert function
- * (this is what the user_app calls)
+ * (this is what the user calls)
  */
 var sweetAlert, swal;
 
@@ -142,7 +142,7 @@ sweetAlert = swal = function () {
     }
   }
 
-  // Clicking outside the modal dismisses it (if allowed by user_app)
+  // Clicking outside the modal dismisses it (if allowed by user)
   _sweetAlertInitialize$getModal$getOverlay$getInput$setFocusStyle$openModal$resetInput$fixVerticalPosition.getOverlay().onclick = onButtonEvent;
 
   previousWindowKeyDown = window.onkeydown;
@@ -153,7 +153,7 @@ sweetAlert = swal = function () {
   window.onkeydown = onKeyEvent;
 
   window.onfocus = function () {
-    // When the user_app has focused away and focused back from the whole window.
+    // When the user has focused away and focused back from the whole window.
     setTimeout(function () {
       // Put in a timeout to jump out of the event sequence.
       // Calling focus() in the event sequence confuses things.
@@ -233,7 +233,7 @@ sweetAlert.close = swal.close = function () {
 };
 
 /*
- * Validation of the input field is done by user_app
+ * Validation of the input field is done by user
  * If something is wrong => call showInputError with errorMessage
  */
 sweetAlert.showInputError = swal.showInputError = function (errorMessage) {
@@ -361,7 +361,7 @@ var handleButton = function handleButton(event, params, modal) {
   var modalIsVisible = _hasClass$isDescendant.hasClass(modal, 'visible');
   var doneFunctionExists = params.doneFunction && modal.getAttribute('data-has-done-function') === 'true';
 
-  // Since the user_app can change the background-color of the confirm button programmatically,
+  // Since the user can change the background-color of the confirm button programmatically,
   // we must calculate what the color should be on hover/active
   var normalColor, hoverColor, activeColor;
   if (targetedConfirm && params.confirmButtonColor) {
@@ -1194,7 +1194,7 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 /*
- * Allow user_app to pass their own params
+ * Allow user to pass their own params
  */
 var extend = function extend(a, b) {
   for (var key in b) {
@@ -1214,7 +1214,7 @@ var hexToRgb = function hexToRgb(hex) {
 };
 
 /*
- * Check if the user_app is using Internet Explorer 8 (for fallbacks)
+ * Check if the user is using Internet Explorer 8 (for fallbacks)
  */
 var isIE8 = function isIE8() {
   return window.attachEvent && !window.addEventListener;

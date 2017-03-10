@@ -191,7 +191,7 @@
 		},
 		set: function(t) {
 			var curr = this.get(t);
-			// If interrupt is true and user_app scrolled, stop animating
+			// If interrupt is true and user scrolled, stop animating
 			if (t.options.interrupt && t._last && t._last !== curr) {
 				return $(t.elem).stop();
 			}

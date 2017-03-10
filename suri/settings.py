@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',  # html과 같은 정적파일 관리를 위한 프레임워크
     'sample',  # 테스트 용도의 App
     'user_app',  # 사용자 로그인 App
-    'suriBoard'  # 자유 게시판 app
+    'suriBoard',  # 자유 게시판 app
+    'mainframe_app',  # 메인프레임 app
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -63,6 +64,7 @@ TEMPLATES = [
         'DIRS': [
                   os.path.join(BASE_DIR, ''),
                   os.path.join(BASE_DIR, 'user_app/template'),
+                  os.path.join(BASE_DIR, 'mainframe_app/template'),
                  ]
         ,
         'APP_DIRS': True,
@@ -86,9 +88,12 @@ DATABASES = {
     'default': {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'USER': 'root',
+        # 'PASSWORD': 'alsghwkr1',
+        # 'HO1ST': '127.0.0.1',
         # 'ENGINE': 'django.db.backends.mysql',
         'ENGINE': 'mysql.connector.django',
-        'NAME': 'suridb',
+        'NAME': 'suridb'    ,
         'USER': 'hermel',
         'PASSWORD': 'alsghwkr1',
         'HOST': '25.73.105.176',
@@ -150,7 +155,6 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'ueer_app/static'),
 )
 
 

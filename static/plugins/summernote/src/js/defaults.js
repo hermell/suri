@@ -229,7 +229,7 @@ define('summernote/defaults', function () {
       onsubmit: null,
 
       /**
-       * manipulate link address when user_app create link
+       * manipulate link address when user create link
        * @param {String} sLinkUrl
        * @return {String}
        */

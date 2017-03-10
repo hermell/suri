@@ -166,7 +166,7 @@ define('parsley/validator', [
               "^" +
                 // protocol identifier
                 "(?:(?:https?|ftp)://)?" + // ** mod: make scheme optional
-                // user_app:pass authentication
+                // user:pass authentication
                 "(?:\\S+(?::\\S*)?@)?" +
                 "(?:" +
                   // IP address exclusion

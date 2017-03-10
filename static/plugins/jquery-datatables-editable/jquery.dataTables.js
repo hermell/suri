@@ -359,7 +359,7 @@
 	 *    mapped.
 	 *  @param {object} user The object to convert from camel case to Hungarian.
 	 *  @param {boolean} force When set to `true`, properties which already have a
-	 *    Hungarian value in the `user_app` object will be overwritten. Otherwise they
+	 *    Hungarian value in the `user` object will be overwritten. Otherwise they
 	 *    won't be.
 	 *  @memberof DataTable#oApi
 	 */
@@ -610,7 +610,7 @@
 		oSettings.aoColumns.push( oCol );
 	
 		// Add search object for column specific search. Note that the `searchCols[ iCol ]`
-		// passed into extend can be undefined. This allows the user_app to give a default
+		// passed into extend can be undefined. This allows the user to give a default
 		// with only some of the parameters defined, and also not give a default
 		var searchCols = oSettings.aoPreSearchCols;
 		searchCols[ iCol ] = $.extend( {}, DataTable.models.oSearch, searchCols[ iCol ] );
@@ -1694,7 +1694,7 @@
 					nTd.innerHTML = _fnGetCellData( oSettings, iRow, i, 'display' );
 				}
 	
-				/* Add user_app defined class */
+				/* Add user defined class */
 				if ( oCol.sClass )
 				{
 					nTd.className += ' '+oCol.sClass;
@@ -1826,7 +1826,7 @@
 		$(tfoot).find('>tr>th, >tr>td').addClass( classes.sFooterTH );
 	
 		// Cache the footer cells. Note that we only take the cells from the first
-		// row in the footer. If there is more than one row the user_app wants to
+		// row in the footer. If there is more than one row the user wants to
 		// interact with, they need to use the table().foot() method. Note also this
 		// allows cells to be used for multiple columns using colspan
 		if ( tfoot !== null ) {
@@ -2151,7 +2151,7 @@
 		oSettings.nTableWrapper = insert[0];
 		oSettings.nTableReinsertBefore = oSettings.nTable.nextSibling;
 	
-		/* Loop over the user_app set positioning and place the elements as needed */
+		/* Loop over the user set positioning and place the elements as needed */
 		var aDom = oSettings.sDom.split('');
 		var featureNode, cOption, nNewNode, cNext, sAttr, j;
 		for ( var i=0 ; i<aDom.length ; i++ )
@@ -2945,7 +2945,7 @@
 	
 	
 	/**
-	 * Filter the data table based on user_app input and draw the table
+	 * Filter the data table based on user input and draw the table
 	 *  @param {object} settings dataTables settings object
 	 *  @param {string} input string to filter on
 	 *  @param {int} force optional - force a research of the master array (1) or not (undefined or 0)
@@ -3368,7 +3368,7 @@
 	
 	
 	/**
-	 * Generate the node required for user_app display length changing
+	 * Generate the node required for user display length changing
 	 *  @param {object} settings dataTables settings object
 	 *  @returns {node} Display length feature node
 	 *  @memberof DataTable#oApi
@@ -3402,7 +3402,7 @@
 			settings.oLanguage.sLengthMenu.replace( '_MENU_', select[0].outerHTML )
 		);
 	
-		// Can't use `select` variable as user_app might provide their own and the
+		// Can't use `select` variable as user might provide their own and the
 		// reference is broken by the use of outerHTML
 		$('select', div)
 			.val( settings._iDisplayLength )
@@ -3973,7 +3973,7 @@
 				tableStyle.width = _fnStringToCss( correction-barWidth );
 			}
 	
-			// And give the user_app a warning that we've stopped the table getting too small
+			// And give the user a warning that we've stopped the table getting too small
 			if ( scrollX === "" || scrollXInner !== "" ) {
 				_fnLog( settings, 1, 'Possible column misalignment', 6 );
 			}
@@ -4115,7 +4115,7 @@
 			tableWidthAttr = styleWidth;
 		}
 	
-		/* Convert any user_app input sizes into pixel sizes */
+		/* Convert any user input sizes into pixel sizes */
 		for ( i=0 ; i<visibleColumns.length ; i++ ) {
 			column = columns[ visibleColumns[i] ];
 	
@@ -4142,7 +4142,7 @@
 		else
 		{
 			// Otherwise construct a single row, worst case, table with the widest
-			// node in the data, assign any user_app defined widths, then insert it into
+			// node in the data, assign any user defined widths, then insert it into
 			// the DOM and allow the browser to do all the hard work of calculating
 			// table widths
 			var tmpTable = $(table).clone() // don't use cloneNode - IE8 will remove events on the main table
@@ -4209,7 +4209,7 @@
 			// Browsers need a bit of a hand when a width is assigned to any columns
 			// when x-scrolling as they tend to collapse the table to the min-width,
 			// even if we sent the column widths. So we need to keep track of what
-			// the table width should be by summing the user_app given values, and the
+			// the table width should be by summing the user given values, and the
 			// automatic values
 			if ( scrollX )
 			{
@@ -4704,7 +4704,7 @@
 	
 	
 	/**
-	 * Function to run on user_app sort request
+	 * Function to run on user sort request
 	 *  @param {object} settings dataTables settings object
 	 *  @param {node} attachTo node to attach the handler to
 	 *  @param {int} colIdx column sorting index
@@ -4782,7 +4782,7 @@
 		// Run the sort by calling a full redraw
 		_fnReDraw( settings );
 	
-		// callback used for async user_app interaction
+		// callback used for async user interaction
 		if ( typeof callback == 'function' ) {
 			callback( settings );
 		}
@@ -5047,7 +5047,7 @@
 	/**
 	 * Log an error message
 	 *  @param {object} settings dataTables settings object
-	 *  @param {int} level log error messages, or display them to the user_app
+	 *  @param {int} level log error messages, or display them to the user
 	 *  @param {string} msg error message
 	 *  @param {int} tn Technical note id to get more information about the error.
 	 *  @memberof DataTable#oApi
@@ -6257,17 +6257,17 @@
 			_fnMap( oSettings.oLanguage, oInit, "fnInfoCallback" );
 			
 			/* Callback functions which are array driven */
-			_fnCallbackReg( oSettings, 'aoDrawCallback',       oInit.fnDrawCallback,      'user_app' );
-			_fnCallbackReg( oSettings, 'aoServerParams',       oInit.fnServerParams,      'user_app' );
-			_fnCallbackReg( oSettings, 'aoStateSaveParams',    oInit.fnStateSaveParams,   'user_app' );
-			_fnCallbackReg( oSettings, 'aoStateLoadParams',    oInit.fnStateLoadParams,   'user_app' );
-			_fnCallbackReg( oSettings, 'aoStateLoaded',        oInit.fnStateLoaded,       'user_app' );
-			_fnCallbackReg( oSettings, 'aoRowCallback',        oInit.fnRowCallback,       'user_app' );
-			_fnCallbackReg( oSettings, 'aoRowCreatedCallback', oInit.fnCreatedRow,        'user_app' );
-			_fnCallbackReg( oSettings, 'aoHeaderCallback',     oInit.fnHeaderCallback,    'user_app' );
-			_fnCallbackReg( oSettings, 'aoFooterCallback',     oInit.fnFooterCallback,    'user_app' );
-			_fnCallbackReg( oSettings, 'aoInitComplete',       oInit.fnInitComplete,      'user_app' );
-			_fnCallbackReg( oSettings, 'aoPreDrawCallback',    oInit.fnPreDrawCallback,   'user_app' );
+			_fnCallbackReg( oSettings, 'aoDrawCallback',       oInit.fnDrawCallback,      'user' );
+			_fnCallbackReg( oSettings, 'aoServerParams',       oInit.fnServerParams,      'user' );
+			_fnCallbackReg( oSettings, 'aoStateSaveParams',    oInit.fnStateSaveParams,   'user' );
+			_fnCallbackReg( oSettings, 'aoStateLoadParams',    oInit.fnStateLoadParams,   'user' );
+			_fnCallbackReg( oSettings, 'aoStateLoaded',        oInit.fnStateLoaded,       'user' );
+			_fnCallbackReg( oSettings, 'aoRowCallback',        oInit.fnRowCallback,       'user' );
+			_fnCallbackReg( oSettings, 'aoRowCreatedCallback', oInit.fnCreatedRow,        'user' );
+			_fnCallbackReg( oSettings, 'aoHeaderCallback',     oInit.fnHeaderCallback,    'user' );
+			_fnCallbackReg( oSettings, 'aoFooterCallback',     oInit.fnFooterCallback,    'user' );
+			_fnCallbackReg( oSettings, 'aoInitComplete',       oInit.fnInitComplete,      'user' );
+			_fnCallbackReg( oSettings, 'aoPreDrawCallback',    oInit.fnPreDrawCallback,   'user' );
 			
 			var oClasses = oSettings.oClasses;
 			
@@ -8926,9 +8926,9 @@
 	 *
 	 *  @param {object} src The model object which holds all parameters that can be
 	 *    mapped.
-	 *  @param {object} user_app The object to convert from camel case to Hungarian.
+	 *  @param {object} user The object to convert from camel case to Hungarian.
 	 *  @param {boolean} force When set to `true`, properties which already have a
-	 *    Hungarian value in the `user_app` object will be overwritten. Otherwise they
+	 *    Hungarian value in the `user` object will be overwritten. Otherwise they
 	 *    won't be.
 	 */
 	DataTable.camelToHungarian = _fnCamelToHungarian;
@@ -9021,7 +9021,7 @@
 			}
 	
 			// Blitz all `DT` namespaced events (these are internal events, the
-			// lowercase, `dt` events are user_app subscribed and they are responsible
+			// lowercase, `dt` events are user subscribed and they are responsible
 			// for removing them
 			jqWrapper.unbind('.DT').find(':not(tbody *)').unbind('.DT');
 			$(window).unbind('.DT-'+settings.sInstance);
@@ -12667,7 +12667,7 @@
 			"bInfo": null,
 	
 			/**
-			 * Present a user_app control allowing the end user_app to change the page size
+			 * Present a user control allowing the end user to change the page size
 			 * when pagination is enabled.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
@@ -12686,7 +12686,7 @@
 	
 			/**
 			 * Processing indicator enable flag whenever DataTables is enacting a
-			 * user_app request - typically an Ajax request for server-side processing.
+			 * user request - typically an Ajax request for server-side processing.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
 			 *  @type boolean
@@ -13259,7 +13259,7 @@
 		"fnFormatNumber": null,
 	
 		/**
-		 * List of options that can be used for the user_app selectable length menu.
+		 * List of options that can be used for the user selectable length menu.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
 		 *  @type array
@@ -13614,7 +13614,7 @@
 		 *  @example
 		 *    // The following example shows custom search being applied to the
 		 *    // fourth column (i.e. the data[3] index) based on two input values
-		 *    // from the end-user_app, matching the data in a certain range.
+		 *    // from the end-user, matching the data in a certain range.
 		 *    $.fn.dataTable.ext.search.push(
 		 *      function( settings, data, dataIndex ) {
 		 *        var min = document.getElementById('min').value * 1;
@@ -13648,7 +13648,7 @@
 		 * each of the three built in selector types offer (row, column and cell +
 		 * their plural counterparts). For example the Select extension uses this
 		 * mechanism to provide an option to select only rows, columns and cells
-		 * that have been marked as selected by the end user_app (`{selected: true}`),
+		 * that have been marked as selected by the end user (`{selected: true}`),
 		 * which can be used in conjunction with the existing built in selector
 		 * options.
 		 *

@@ -16,12 +16,12 @@
     var _defaults = {
         target:         null,                   // Set the URL, ID or Class.
         cache:          false,                  // If set to false, it will force requested pages not to be cached by the browser only when send by AJAX.
-        escKey:         true,                   // Allows the user_app to close the modal by pressing 'ESC'.
+        escKey:         true,                   // Allows the user to close the modal by pressing 'ESC'.
         zIndex:         9999,                   // Overlay z-index: Auto or number.
         overlay:        true,                   // Show the overlay.
         overlayColor:   '#000',                 // Overlay color.
         overlayOpacity: 0.8,                    // The overlay opacity level. Range: 0 to 1.
-        overlayClose:   true,                   // Allows the user_app to close the modal by clicking the overlay.
+        overlayClose:   true,                   // Allows the user to close the modal by clicking the overlay.
         overlaySpeed:   300,                    // Sets the speed of the overlay, in milliseconds.
         overlayEffect:  'auto',                 // Combine any of the effects.
         width:          null,                   // Set a fixed total width or 'full'.

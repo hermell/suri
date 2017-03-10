@@ -1068,7 +1068,7 @@ var Validator = ( function ( ) {
               "^" +
                 // protocol identifier
                 "(?:(?:https?|ftp)://)?" + // ** mod: make scheme optional
-                // user_app:pass authentication
+                // user:pass authentication
                 "(?:\\S+(?::\\S*)?@)?" +
                 "(?:" +
                   // IP address exclusion
@@ -1213,7 +1213,7 @@ var Validator = ( function ( ) {
       this.manageErrorsMessages(fieldInstance, diff);
       // Triggers impl
       this.actualizeTriggers(fieldInstance);
-      // If field is not valid for the first time, bind keyup trigger to ease UX and quickly inform user_app
+      // If field is not valid for the first time, bind keyup trigger to ease UX and quickly inform user
       if ((diff.kept.length || diff.added.length) && true !== fieldInstance._ui.failedOnce)
         this.manageFailingFieldTrigger(fieldInstance);
     },
@@ -1771,7 +1771,7 @@ var Validator = ( function ( ) {
     // Bind constraints from config + options + DOM
     _bindConstraints: function () {
       var constraints = [], constraintsByName = {};
-      // clean all existing DOM constraints to only keep javascript user_app constraints
+      // clean all existing DOM constraints to only keep javascript user constraints
       for (var i = 0; i < this.constraints.length; i++)
         if (false === this.constraints[i].isDomConstraint) {
           constraints.push(this.constraints[i]);

@@ -68,7 +68,7 @@ window.ParsleyExtend = $.extend(true, window.ParsleyExtend, {
 
     return this._asyncValidateForm(undefined, event)
       .done(function () {
-        // If user_app do not have prevented the event, re-submit form
+        // If user do not have prevented the event, re-submit form
         if (that._trigger('submit') && !that.submitEvent.isDefaultPrevented())
           that.$element.trigger($.extend($.Event('submit'), { parsley: true }));
       });

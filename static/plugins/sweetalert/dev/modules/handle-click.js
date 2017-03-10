@@ -15,7 +15,7 @@ var handleButton = function(event, params, modal) {
   var modalIsVisible  = hasClass(modal, 'visible');
   var doneFunctionExists = (params.doneFunction && modal.getAttribute('data-has-done-function') === 'true');
 
-  // Since the user_app can change the background-color of the confirm button programmatically,
+  // Since the user can change the background-color of the confirm button programmatically,
   // we must calculate what the color should be on hover/active
   var normalColor, hoverColor, activeColor;
   if (targetedConfirm && params.confirmButtonColor) {

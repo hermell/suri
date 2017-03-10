@@ -189,7 +189,7 @@ define([
       var isExternalAPICalled = type === 'string';
       var hasInitOptions = type === 'object';
 
-      // extend default options with custom user_app options
+      // extend default options with custom user options
       var options = hasInitOptions ? list.head(arguments) : {};
 
       options = $.extend({}, $.summernote.options, options);

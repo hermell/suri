@@ -346,9 +346,9 @@
      [ method ]
      **
      * Binds given event handler with a given name to only run once then unbind itself.
-     | eve.once("login", f);
-     | eve("login"); // triggers f
-     | eve("login"); // no listeners
+     | eve.once("login_app", f);
+     | eve("login_app"); // triggers f
+     | eve("login_app"); // no listeners
      * Use @eve to trigger the listener.
      **
      > Arguments
