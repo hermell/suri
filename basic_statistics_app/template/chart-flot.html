@@ -1,0 +1,189 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="{% static 'images/favicon_1.ico' %}">
+
+        <title>Minton - Responsive Admin Dashboard Template</title>
+
+        <link href="{% static 'plugins/switchery/switchery.min.css' %}" rel="stylesheet" />
+
+        <script src="{% static 'js/modernizr.min.js' %}"></script>
+
+    </head>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Multiple Statistics
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#portlet1"><i class="ion-minus-round"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="portlet1" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div id="website-stats" style="height: 320px;" class="flot-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Realtime Statistics
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#portlet2"><i class="ion-minus-round"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="portlet2" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div id="flotRealTime" style="height: 320px;" class="flot-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Donut Pie
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#portlet3"><i class="ion-minus-round"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="portlet3" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div id="donut-chart">
+                                <div id="donut-chart-container" class="flot-chart" style="height: 320px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Pie Chart
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#portlet4"><i class="ion-minus-round"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="portlet4" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div id="pie-chart">
+                                <div id="pie-chart-container" class="flot-chart" style="height: 320px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Pie Chart
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#portlet7"><i class="ion-minus-round"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="portlet7" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div id="ordered-bars-chart" style="height: 320px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="portlet"><!-- /primary heading -->
+                    <div class="portlet-heading">
+                        <h3 class="portlet-title text-dark">
+                            Combine Statistics
+                        </h3>
+                        <div class="portlet-widgets">
+                            <a href="javascript:;" data-toggle="reload"><i class="ion-refresh"></i></a>
+                            <span class="divider"></span>
+                            <a data-toggle="collapse" data-parent="#accordion1" href="#portlet5"><i class="ion-minus-round"></i></a>
+                            <span class="divider"></span>
+                            <a href="#" data-toggle="remove"><i class="ion-close-round"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div id="portlet5" class="panel-collapse collapse in">
+                        <div class="portlet-body">
+                            <div id="combine-chart">
+                                <div id="combine-chart-container" class="flot-chart" style="height: 320px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+        <script src="{% static 'plugins/switchery/switchery.min.js' %}"></script>
+
+        <script src="{% static 'plugins/flot-chart/jquery.flot.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.time.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.tooltip.min.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.resize.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.pie.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.selection.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.stack.js' %}"></script>
+        <script src="{% static 'plugins/flot-chart/jquery.flot.crosshair.js' %}"></script>
+        <script src="{% static 'pages/jquery.flot.init.js' %}"></script>
+</html>
